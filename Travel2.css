@@ -73,10 +73,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0;
+    margin: 1%;
     padding: 0;
     list-style:none;
-    background-color: rgb(188, 251, 50);
+    
 }
 #option li{
     display: inline-block;
@@ -89,6 +89,7 @@ body{
     text-decoration: none;
     border-radius: 5px;
     background-color: #fff;
+    text-align: center;
 }
 #footer{
     width: 100%;
