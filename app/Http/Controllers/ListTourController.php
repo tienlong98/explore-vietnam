@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Rating;
 use App\Models\Tour;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ListTourController extends Controller
 {
@@ -23,24 +25,24 @@ class ListTourController extends Controller
     {
         if (Tour::where('slug', $slug)->exists()) {
             $tour = Tour::where('slug', $slug)->first();
-            return view('detail', compact('tour'));
+            $categories = Category::all();
+            $featured_tour = Tour::where('featured', 1)->limit(4)->get();
+            $trending_tour = Tour::where('trending', 1)->limit(4)->get();
+            $rate = Rating::where('tour_id', $tour->id)->orderBy('created_at', 'DESC')->get();
+            $rateAvg = Rating::where('tour_id', $tour->id)->avg('rating_star');
+            return view('detail', compact('tour', 'rate','rateAvg', 'categories', 'featured_tour', 'trending_tour'));
         } else {
             return redirect('/')->with('status', 'Slug do not exists');
         }
     }
-    // public function sort()
-    // {
-    //     $this->sorting = "default";
-    //     $this->pagesize = 9;
-    //     if ($this->sorting == 'date') {
-    //         $tours = Tour::orderBy('created_at', 'DESC')->paginate($this->pagesize);
-    //     } elseif ($this->sorting == 'price') {
-    //         $tours = Tour::orderBy('regular_price', 'ASC')->paginate($this->pagesize);
-    //     } elseif ($this->sorting == 'featured') {
-    //         $tours = Tour::orderBy('featured',1)->paginate($this->pagesize);
-    //     } elseif ($this->sorting == 'price-desc') {
-    //         $tours = Tour::orderBy('regular_price', 'DESC')->paginate($this->pagesize);
-    //     }
-    //     return view('listtour',compact('tours'));
-    // }
+    public function addrate(Request $req)
+    {
+        $rating = new Rating();
+        $rating->user_id = $req->input('user_id');
+        $rating->rating_star = $req->input('rating_star');
+        $rating->tour_id = $req->input('tour_id');
+        $rating->comment = $req->input('comment');
+        $rating->save();
+        return redirect()->back();
+    }
 }

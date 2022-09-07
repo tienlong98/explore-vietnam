@@ -51,6 +51,6 @@ class CartController extends Controller
     }
     public function submit()
     {
-        return redirect('/booked')->with('status', "Successfully");
+        return view('thank');
     }
 }

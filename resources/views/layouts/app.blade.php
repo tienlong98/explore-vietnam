@@ -14,6 +14,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- CSS only -->
+    @yield('css')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/customs-menu.css') }}" />
@@ -83,11 +84,6 @@
                     </ul>
                 </div>
                 <div class="menu-right d-flex">
-                    <div class="search me-4">
-                        <a href="#">
-                            <ion-icon name="cart-outline"></ion-icon>
-                        </a>
-                    </div>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
@@ -111,6 +107,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
+                                    <a class="dropdown-item" href="{{ url('booked') }}">Booked Tour</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">

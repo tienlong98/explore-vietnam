@@ -14,9 +14,11 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    @yield('css')
 
 </head>
 
@@ -52,11 +54,7 @@
                         </ul>
                     </div>
                     <div class="menu-right d-flex">
-                        <div class="search me-4">
-                            <a href="#">
-                                <ion-icon name="cart-outline"></ion-icon>
-                            </a>
-                        </div>
+
                         <ul class="navbar-nav ms-auto">
                             <!-- Authentication Links -->
                             @guest
@@ -80,7 +78,7 @@
 
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
-
+                                        <a class="dropdown-item" href="{{ url('booked') }}">Booked Tour</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
@@ -170,6 +168,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    @yield('scripts')
 </body>
 
 </html>

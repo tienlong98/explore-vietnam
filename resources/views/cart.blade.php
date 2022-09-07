@@ -19,7 +19,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="" method="">
+                    <form action="" method="POST">
+                        @csrf
                         <div class="card mb-5">
                             <div class="card-body">
                                 <table class="table text-center show-pc">
@@ -58,13 +59,20 @@
                                 <p>Subtotal Price: {{ number_format($item->subtotal) }}</p>
                                 <p>Tax Price: {{ number_format($item->tax) }}</p>
                                 <p>Total Price: {{ number_format($item->total) }}</p>
-
+                                <input type="hidden" name="total" value="{{ number_format($item->total) }}">
                             </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center mb-5">
+
+                            {{-- <input type="submit" value="Submit" > --}}
+                            <a href="{{ url('thank', []) }}"></a>
                         </div>
                     </form>
                 </div>
                 <div class="col-lg-12 d-flex justify-content-center mb-5">
-                    <a href="{{ url('booked') }}">Submit</a>
+
+                    {{-- <input type="submit" value="Submit" > --}}
+                    <a href="{{ url('thank', []) }}">Submit</a>
                 </div>
             </div>
         </div>

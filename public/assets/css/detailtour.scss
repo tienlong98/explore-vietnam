@@ -10,9 +10,12 @@ img {
 
 }
 
-.banner {
+.title-detail {
     width: 100%;
-    height: 80vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h3,

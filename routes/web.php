@@ -42,7 +42,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('view-cart', [CartController::class, 'index']);
     Route::get('delete-cart/{id}', [CartController::class, 'delete']);
     Route::get('booked', [BookedTourController::class, 'index']);
-    Route::post('payment', [BookedTourController::class, 'bookeditem']);
+    Route::get('thank', [CartController::class, 'submit']);
+    Route::post('booked-tour', [BookedTourController::class, 'bookeditem']);
+    Route::post('rating', [ListTourController::class, 'addrate']);
 });
 
 Route::middleware(['auth', 'isAdmin'])->group(function () {
