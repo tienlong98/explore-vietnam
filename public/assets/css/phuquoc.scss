@@ -1,0 +1,165 @@
+@import url("./fonts.css");
+
+
+@mixin vienanh {
+    border: 5px solid #fff;
+    border-radius: 0px;
+}
+
+@mixin tieude-cacmien {
+    h1 {
+        font-weight: bold;
+        font-size: 2.3em;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-top: 25px;
+    }
+}
+
+body {
+    font-family: "Huifont";
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+
+}
+
+.content-1 {
+    background: url(../images/bgdulich.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 51.6% 100%;
+
+    .content-1-left {
+        margin-top: 200px;
+        margin-bottom: 150px;
+        text-align: center;
+        position: relative;
+
+        .fix-vitri1 {
+            position: absolute;
+            left: 40px;
+            bottom: -50px;
+        }
+
+        img {
+            @include vienanh();
+        }
+    }
+
+    .content-1-right {
+        margin-top: 250px;
+        @include tieude-cacmien();
+
+    }
+}
+
+.content-2 {
+    background-color: #e3bca9;
+    text-align: center;
+
+    .fix-w {
+        width: 60%;
+    }
+}
+
+.content-3 {
+    background: url(../images/bgdulich1.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 50.8% 0%;
+
+    .content-3-left {
+        text-align: right;
+        @include tieude-cacmien();
+    }
+
+    .content-3-right {
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 150px;
+
+        .fix-vitri2 {
+            position: absolute;
+            right: 20px;
+            top: 50px;
+            transform: rotate(10deg);
+        }
+
+        img {
+            @include vienanh();
+        }
+    }
+}
+
+.content-4 {
+    background: #dfdde2;
+
+    .thuvien {
+        padding-left: 20px;
+
+        h4 {
+            font-weight: 900;
+            padding-left: 10px;
+            border-left: 5px solid #e3bca9;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+
+    .photo {
+        position: relative;
+        column-count: 4;
+        padding: 20px;
+
+        .image {
+            display: inline-block;
+            margin-bottom: 10px;
+
+            img {
+                width: 100%;
+                cursor: zoom-in;
+            }
+        }
+    }
+
+}
+
+footer {
+    background: #dfdde2;
+
+    ion-icon {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .content-4 {
+        .photo {
+            column-count: 3 !important;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content-4 {
+        .photo {
+            column-count: 2 !important;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .content-4 {
+        .photo {
+            column-count: 1 !important;
+        }
+    }
+}

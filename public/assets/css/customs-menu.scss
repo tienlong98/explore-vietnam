@@ -1,0 +1,193 @@
+@import url("./fonts.css");
+
+body {
+    font-family: "Huifont";
+}
+
+.menu {
+    margin-left: 25px;
+    background-color: white;
+
+    .text-logo {
+        font-family: "LifeLogo";
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+        position: relative;
+    }
+
+    ion-icon {
+        font-size: 20px;
+        color: black;
+    }
+
+    .icon-1 {
+        position: absolute;
+        left: -5px;
+        top: 5px;
+        transform: rotate(-45deg);
+    }
+
+    .icon-2 {
+        position: absolute;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .nav-item {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0px 15px 0px 15px;
+
+        .nav-link {
+            color: black;
+        }
+    }
+
+    .menu-right {
+        .login {
+            position: relative;
+
+            .fix-hover {
+                color: black;
+                text-decoration: none;
+
+                ion-icon {
+                    margin-top: 5px;
+                }
+            }
+
+            .list-menu-user {
+                display: none;
+                position: absolute;
+                background-color: #fef7f5;
+                top: 25px;
+                width: 100%;
+
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                    padding-left: 10px;
+                }
+            }
+
+            &:hover {
+                .list-menu-user {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .logo-footer {
+        position: relative;
+        color: black;
+
+        .text-logo-footer {
+            font-family: "LifeLogo";
+            font-size: 30px;
+            margin: 0;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .icon-3 {
+            position: absolute;
+            left: -20px;
+            top: -5px;
+            transform: rotate(-45deg);
+            font-size: 20px;
+        }
+
+        .icon-4 {
+            position: absolute;
+            right: -20px;
+            top: 5px;
+            transform: rotate(45deg);
+            font-size: 20px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15vw;
+            width: 30vw;
+            height: 2px;
+            background-color: black;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15vw;
+            width: 30vw;
+            height: 2px;
+            background-color: black;
+        }
+    }
+
+    .text-footer-left {
+        order: 1;
+    }
+
+    .text-footer-right {
+        order: 3;
+    }
+
+    .text-footer-center {
+        order: 2;
+
+        .sns-footer {
+            ion-icon {
+                padding: 15px;
+                font-size: 20px;
+            }
+        }
+
+        .line {
+            width: 2px;
+            height: 10vh;
+            background-color: black;
+        }
+
+        table {
+            width: 80%;
+
+            tr {
+                border: 2px solid black;
+
+                td {
+                    padding: 15px 0px;
+                }
+            }
+        }
+
+        .ion-ft {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        .text-footer-right {
+            order: 2;
+        }
+
+        .text-footer-center {
+            order: 3;
+        }
+    }
+}

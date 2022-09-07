@@ -1,0 +1,167 @@
+@import url("./fonts.css");
+$anhnho:80px;
+
+body {
+    font-family: "Huifont";
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+header {
+    height: 35vh;
+}
+
+.title-tour {
+    padding-left: 15px;
+    border-left: 3px solid yellowgreen;
+
+    h3 {}
+}
+
+.item-tour {
+    img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .item-content-tour {
+        border: 2px solid yellowgreen;
+        border-top: 0;
+    }
+}
+
+.sapxep {}
+
+.best-tour-ex {
+    .title-best-tour {
+        padding-left: 15px;
+        border-left: 3px solid yellowgreen;
+        margin-bottom: 40px;
+    }
+
+    .item-best-tour {
+        .item-content {
+            width: 100%;
+            padding-left: 15px;
+        }
+    }
+}
+
+footer {
+    .logo-footer {
+        position: relative;
+        color: black;
+
+        .text-logo-footer {
+            font-family: "LifeLogo";
+            font-size: 30px;
+            margin: 0;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .icon-3 {
+            position: absolute;
+            left: -20px;
+            top: -5px;
+            transform: rotate(-45deg);
+            font-size: 20px;
+        }
+
+        .icon-4 {
+            position: absolute;
+            right: -20px;
+            top: 5px;
+            transform: rotate(45deg);
+            font-size: 20px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15vw;
+            width: 30vw;
+            height: 2px;
+            background-color: black;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15vw;
+            width: 30vw;
+            height: 2px;
+            background-color: black;
+        }
+    }
+
+    .text-footer-left {
+        order: 1;
+    }
+
+    .text-footer-right {
+        order: 3;
+    }
+
+    .text-footer-center {
+        order: 2;
+
+        .sns-footer {
+            ion-icon {
+                padding: 15px;
+                font-size: 20px;
+            }
+        }
+
+        .line {
+            width: 2px;
+            height: 10vh;
+            background-color: black;
+        }
+
+        table {
+            width: 80%;
+
+            tr {
+                border: 2px solid black;
+
+                td {
+                    padding: 15px 0px;
+                }
+            }
+        }
+
+        .ion-ft {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        .text-footer-right {
+            order: 2;
+        }
+
+        .text-footer-center {
+            order: 3;
+        }
+    }
+}
