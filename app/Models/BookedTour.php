@@ -15,6 +15,8 @@ class BookedTour extends Model
         'tourname',
         'image',
         'total',
+        'pp_number',
+        'de_date',
         'status',
 
     ];

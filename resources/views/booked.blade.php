@@ -24,25 +24,28 @@
                                 <table class="table text-center show-pc">
                                     <thead>
                                         <tr>
-                                            <th>Tour Name</th>
-                                            <th>Image</th>
-                                            <th>Number of people</th>
-                                            <th>Total Price</th>
-                                            <th>Departure date</th>
+                                        <tr>ID</tr>
+                                        <th>Image</th>
+                                        <th>Tour Name</th>
+                                        <th>Number of people</th>
+                                        <th>Total Price</th>
+                                        <th>Departure date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($cartitems as $item)
+                                        @foreach ($bookeditem as $item)
                                             <tr>
+                                                <td>{{ $item->id }}</td>
                                                 <td><a href=""><img
                                                             src="{{ asset('assets/uploads/tours/' . $item->image) }}"
                                                             alt="Image" width="80" height="80"
                                                             class="rounded-circle"></a>
                                                 </td>
-                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->tourname }}</td>
                                                 <td>{{ $item->pp_number }}</td>
-                                                <th>{{ number_format($item->price) }}</th>
                                                 <td>{{ $item->de_date }}</td>
+                                                <td>{{ number_format($item->price) }}</td>
+
                                             </tr>
                                         @endforeach
 

@@ -9,19 +9,16 @@ use Illuminate\Support\Facades\Auth;
 
 class BookedTourController extends Controller
 {
-    public function index()
-    {
-        $cartitems = Cart::where('user_id', Auth::id())->get();
-        return view('booked', compact('cartitems'));
-    }
+
     public function bookeditem(Request $request)
     {
         if (Auth::id()) {
-            $user = Auth::user();
             $bookeditem = new BookedTour();
-            $bookeditem->user_id = $user->id;
-            $bookeditem->username = $user->name;
+            $bookeditem->user_id = $request->input('user_id');
+            $bookeditem->username = $request->input('user_name');
             $bookeditem->tourname = $request->input('tourname');
+            $bookeditem->pp_number = $request->input('pp_number');
+            $bookeditem->de_date = $request->input('de_date');
             $bookeditem->image = $request->input('image');
             $bookeditem->total = $request->input('total');
             $bookeditem->save();
@@ -29,5 +26,10 @@ class BookedTourController extends Controller
         } else {
             return redirect('login');
         }
+    }
+    public function showbooked()
+    {
+        $bookeditem = BookedTour::where('user_id', Auth::id())->get();
+        return view('booked', compact('bookeditem'));
     }
 }

@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('username');
             $table->string('tourname');
             $table->string('image');
+            $table->string('pp_number');
+            $table->string('de_date');
             $table->decimal('total');
             $table->boolean('status')->default(false);
             $table->timestamps();

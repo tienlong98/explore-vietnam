@@ -8,13 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/detailyama.css') }}" />
-    <title>Sa Pa</title>
+    <title>{{ __('Ca Mau Floating Market') }}</title>
 </head>
 
 <body>
     <header class="d-flex justify-content-center align-items-center">
         <div class="title">
-            <h1>カマウ水上マーケット</h1>
+            <h1>{{ __('Ca Mau Floating Market') }}</h1>
         </div>
     </header>
 
@@ -22,11 +22,11 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
                 <div class="d-flex justify-content-center align-items-center ">
-                    <img src="{{asset('assets/images/ptg8.jpg')}}" width="60%" alt="">
+                    <img src="{{ asset('assets/images/ptg8.jpg') }}" width="60%" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
-                <h1 class="mt-5 fs-3">カマウ水上マーケットはどこ？</h1>
+                <h1 class="mt-5 fs-3">{{ __('Where is Ca Mau Floating Market?') }}</h1>
                 <!-- <h1 class="ms-5">such place</h1> -->
                 <p class="mt-5">カマウ水上マーケットは、カマウ市の中心部、8 区のガンハオ橋から約 200 メートル、ガンハオ川の端に位置している。
                     カマウ水上マーケットは、<br>西部の他の水上マーケットと同じくらいにぎやかである。 ここには何百ものボートがあり、大小さまざまなボートが商品でいっぱいで、ここで交換したり取引したりできる。
