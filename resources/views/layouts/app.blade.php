@@ -24,28 +24,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/custom-input-number.css') }}" />
 
     <style>
-        .fix-img-cart {
-            width: 70px;
-            height: 70px;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
-        }
-
-        .show-mb {
-            display: none;
-        }
-
-        .show-mb tbody {
-            width: 100%;
-        }
-
-        .show-mb tbody .img-mb {
-            width: 100px;
+        .icon-language {
+            width: 16px;
             height: auto;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
+            margin-right: 10px;
         }
 
         ion-icon {
@@ -85,6 +67,21 @@
                 </div>
                 <div class="menu-right d-flex">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <ion-icon name="language-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="{{ asset('assets/images/us.png') }}" class="icon-language">English</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="{{ asset('assets/images/japan.png') }}"
+                                            class="icon-language">Japanese</a>
+                                </li>
+                            </ul>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))

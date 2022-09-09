@@ -18,6 +18,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    <style>
+        .icon-language {
+            width: 16px;
+            height: auto;
+            margin-right: 10px;
+        }
+    </style>
     @yield('css')
 
 </head>
@@ -37,7 +44,7 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link" href="/">{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/listtour">Tours</a>
@@ -56,6 +63,24 @@
                     <div class="menu-right d-flex">
 
                         <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ion-icon name="language-outline"></ion-icon>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="{{ route('change_language', ['locale' => 'en']) }}"><img
+                                                src="{{ asset('assets/images/us.png') }}"
+                                                class="icon-language">English</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="{{ route('change_language', ['locale' => 'jp']) }}"><img
+                                                src="{{ asset('assets/images/japan.png') }}"
+                                                class="icon-language">Japanese</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <!-- Authentication Links -->
                             @guest
                                 @if (Route::has('login'))

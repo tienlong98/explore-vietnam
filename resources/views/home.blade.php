@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 best-tour text-center mt-5">
-                <h1 class="title-bt">LIVE FULLY IN VIETNAM</h1>
+                <h1 class="title-bt">{{ __('home.LIVE FULLY IN VIETNAM') }}</h1>
                 <div class="text-title fs-5">
                     <p class="text-title">
                         " Spectacular nature. Exceptional cuisine. Cultural diversity.

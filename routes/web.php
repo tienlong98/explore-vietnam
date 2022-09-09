@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\Admin\TourController;
 use App\Http\Controllers\BookedTourController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListTourController;
 use App\Http\Controllers\ListyamaController;
 use App\Http\Controllers\UserCategoryController;
@@ -27,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Auth::routes();
-
+Route::get('change/{locale}', [HomeController::class, 'change_language'])->name('change_language');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
 Route::get('listyama', [ListyamaController::class, 'index'])->name('listyama');
 Route::get('listditich', [ListyamaController::class, 'index1'])->name('listditich');
