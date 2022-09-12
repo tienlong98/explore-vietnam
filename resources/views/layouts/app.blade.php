@@ -73,10 +73,12 @@
                                 <ion-icon name="language-outline"></ion-icon>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#"><img
+                                <li><a class="dropdown-item"
+                                        href="{{ route('change_language', ['locale' => 'en']) }}"><img
                                             src="{{ asset('assets/images/us.png') }}" class="icon-language">English</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><img
+                                <li><a class="dropdown-item"
+                                        href="{{ route('change_language', ['locale' => 'jp']) }}"><img
                                             src="{{ asset('assets/images/japan.png') }}"
                                             class="icon-language">Japanese</a>
                                 </li>

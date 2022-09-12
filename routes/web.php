@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\CarController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\FrontendController;
+use App\Http\Controllers\Admin\HotelController;
 use App\Http\Controllers\Admin\TourController;
 use App\Http\Controllers\BookedTourController;
 use App\Http\Controllers\CartController;
@@ -38,6 +40,8 @@ Route::get('phuquoc', [ListyamaController::class, 'phuquoc'])->name('phuquoc');
 Route::get('listtour', [ListTourController::class, 'index'])->name('listtour');
 Route::get('user-category/{slug}', [UserCategoryController::class, 'index']);
 Route::get('listtour/{slug}', [ListTourController::class, 'detailtour'])->name('tour.detail');
+Route::get('search', [ListTourController::class, 'search']);
+
 Route::post('addcart/{id}', [CartController::class, 'addcart']);
 Route::middleware(['auth'])->group(function () {
     Route::get('view-cart', [CartController::class, 'index']);
@@ -62,4 +66,18 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('edit-tour/{id}', [TourController::class, 'edit'])->name('edit-tour');
     Route::put('update-tour/{id}', [TourController::class, 'update'])->name('update-tour');
     Route::get('delete-tour/{id}', [TourController::class, 'destroy'])->name('delete-tour');
+    Route::get('hotels', [HotelController::class, 'index'])->name('hotels');
+    Route::get('add-hotel', [HotelController::class, 'add'])->name('add-hotel');
+    Route::post('insert-hotel', [HotelController::class, 'insert'])->name('insert-hotel');
+    Route::get('edit-hotel/{id}', [HotelController::class, 'edit'])->name('edit-hotel');
+    Route::put('update-hotel/{id}', [HotelController::class, 'update'])->name('update-hotel');
+    Route::get('delete-hotel/{id}', [HotelController::class, 'destroy'])->name('delete-hotel');
+    Route::get('cars', [CarController::class, 'index'])->name('cars');
+    Route::get('add-car', [CarController::class, 'add'])->name('add-car');
+    Route::post('insert-car', [CarController::class, 'insert'])->name('insert-car');
+    Route::get('edit-car/{id}', [CarController::class, 'edit'])->name('edit-car');
+    Route::put('update-car/{id}', [CarController::class, 'update'])->name('update-car');
+    Route::get('delete-car/{id}', [CarController::class, 'destroy'])->name('delete-car');
+    Route::get('users', [FrontendController::class, 'user'])->name('users');
+    Route::get('delete-user/{id}', [FrontendController::class, 'destroy'])->name('delete-user');
 });

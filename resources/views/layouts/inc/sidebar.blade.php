@@ -17,6 +17,13 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
+    <li class="nav-item {{ Request::is('users') ? 'active' : '' }}">
+        <a class="nav-link " href="{{ route('users') }}">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Users</span>
+        </a>
+
+    </li>
     <li class="nav-item {{ Request::is('categories') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
@@ -28,6 +35,36 @@
                 <h6 class="collapse-header">Custom Category:</h6>
                 <a class="collapse-item" href="{{ route('categories') }}">All Category</a>
                 <a class="collapse-item" href="{{ route('add-category') }}">Add Category</a>
+
+            </div>
+        </div>
+    </li>
+    <li class="nav-item {{ Request::is('hotels') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseht"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Hotels</span>
+        </a>
+        <div id="collapseht" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Hotel:</h6>
+                <a class="collapse-item" href="{{ route('hotels') }}">All Hotel</a>
+                <a class="collapse-item" href="{{ route('add-hotel') }}">Add Hotel</a>
+
+            </div>
+        </div>
+    </li>
+    <li class="nav-item {{ Request::is('cars') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecar"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Cars</span>
+        </a>
+        <div id="collapsecar" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Car:</h6>
+                <a class="collapse-item" href="{{ route('cars') }}">All Car</a>
+                <a class="collapse-item" href="{{ route('add-car') }}">Add Car</a>
 
             </div>
         </div>

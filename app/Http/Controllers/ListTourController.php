@@ -30,7 +30,7 @@ class ListTourController extends Controller
             $trending_tour = Tour::where('trending', 1)->limit(4)->get();
             $rate = Rating::where('tour_id', $tour->id)->orderBy('created_at', 'DESC')->get();
             $rateAvg = Rating::where('tour_id', $tour->id)->avg('rating_star');
-            return view('detail', compact('tour', 'rate','rateAvg', 'categories', 'featured_tour', 'trending_tour'));
+            return view('detail', compact('tour', 'rate', 'rateAvg', 'categories', 'featured_tour', 'trending_tour'));
         } else {
             return redirect('/')->with('status', 'Slug do not exists');
         }
@@ -44,5 +44,14 @@ class ListTourController extends Controller
         $rating->comment = $req->input('comment');
         $rating->save();
         return redirect()->back();
+    }
+    public function search(Request $req)
+    {
+        $search_text = $req->input('query');
+        $tour = Tour::where('name', 'LIKE', '%' . $search_text . '%')->get();
+        $categories = Category::all();
+        $featured_tour = Tour::where('featured', 1)->limit(4)->get();
+        $trending_tour = Tour::where('trending', 1)->limit(4)->get();
+        return view('search', compact('tour', 'categories', 'featured_tour', 'trending_tour'));
     }
 }

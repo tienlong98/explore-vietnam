@@ -23,11 +23,13 @@ return new class extends Migration
             $table->decimal('regular_price');
             $table->decimal('sale_price')->nullable();
             $table->string('qty');
-            // $table->string('tax');
             $table->boolean('featured')->default(false);
             $table->boolean('trending')->default(false);
             $table->string('image')->nullable();
             $table->bigInteger('cate_id')->unsigned()->nullable();
+            $table->bigInteger('car_id')->unsigned()->nullable();
+            $table->bigInteger('hotel_id')->unsigned()->nullable();
+
             $table->timestamps();
             // $table->foreign('cate_id')->references('id')->on('categories')->onDelete('cascade');
         });

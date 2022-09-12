@@ -2,7 +2,7 @@
 @section('content')
     <div>
         <header class="d-flex justify-content-center align-items-center">
-            <h1>{{ $category->name }}</h1>
+            <h1>Travel by personality.</h1>
         </header>
         <div class="container mb-5">
             <div class="row">
@@ -26,16 +26,16 @@
 
                     </div>
                     <div class="row">
-                        @foreach ($tours as $tour)
+                        @foreach ($tour as $item)
                             <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-5">
                                 <div class="item-tour">
-                                    <a href="{{ url('listtour/' . $tour->slug) }}"><img
-                                            src="{{ asset('assets/uploads/tours/' . $tour->image) }}" alt="Image"
+                                    <a href=" {{ url('listtour/' . $item->slug) }}"><img
+                                            src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image"
                                             width="100%"></a>
                                     <div class="item-content-tour ps-3">
                                         <div class="content-title fs-5">
-                                            <a href="{{ url('listtour/' . $tour->slug) }}">
-                                                <p>{{ $tour->name }}</p>
+                                            <a href="{{ url('listtour/' . $item->slug) }}">
+                                                <p>{{ $item->name }}</p>
                                             </a>
 
                                         </div>
@@ -47,18 +47,23 @@
                                             <ion-icon name="star-outline"></ion-icon>
                                         </div>
                                         <div class="content-text">
-                                            {{ $tour->short_descripsition }}
+                                            {{ $item->short_descripsition }}
                                         </div>
                                         <div class="content-bottom d-flex justify-content-between">
-                                            <p class="fs-5 fw-b">{{ number_format($tour->regular_price) }}$</p>
-                                            <a href="">Book Now</a>
+                                            <p class="fs-5 fw-b">{{ number_format($item->regular_price) }}$</p>
+
+                                            @if ($item->qty > 0)
+                                                <a href="">Book Now</a>
+                                            @else
+                                                <p>Het cho</p>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         @endforeach
                     </div>
-                    {{ $tours->links() }}
+                    {{-- {{ $tour->links() }} --}}
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                     <div class="timkiem mt-5 mb-5">

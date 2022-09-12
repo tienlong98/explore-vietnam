@@ -68,15 +68,15 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                     <div class="timkiem mt-5 mb-5">
                         <nav class="navbar navbar-light bg-light">
-                            <form class="container-fluid">
+                            <form class="container-fluid" action="{{ url('search') }}" method="GET">
                                 <div class="input-group">
 
-                                    <input type="text" class="form-control" placeholder="Search" aria-label="Username"
-                                        aria-describedby="basic-addon1">
+                                    <input type="text" name="query" class="form-control" placeholder="Search"
+                                        aria-label="Username" aria-describedby="basic-addon1">
                                     <span class="input-group-text" id="basic-addon1">
-                                        <a href="#">
+                                        <button type="submit" style="border: none">
                                             <ion-icon name="search-outline"></ion-icon>
-                                        </a>
+                                        </button>
                                     </span>
                                 </div>
                             </form>
