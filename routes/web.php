@@ -8,6 +8,10 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListTourController;
 use App\Http\Controllers\ListyamaController;
+// them mot aboutController
+use  App\Http\Controllers\aboutController;
+// them mot contactController
+use App\Http\Controllers\contactController;
 use App\Http\Controllers\UserCategoryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +39,11 @@ Route::get('listditich', [ListyamaController::class, 'index1'])->name('listditic
 Route::get('listumi', [ListyamaController::class, 'index2'])->name('listumi');
 Route::get('sapa', [ListyamaController::class, 'sapa'])->name('sapa');
 Route::get('phuquoc', [ListyamaController::class, 'phuquoc'])->name('phuquoc');
+// about
+Route::get('about', [aboutController::class, 'about'])->name('about');
+// contact
+Route::get('contact', [contactController::class, 'contact'])->name('form');
+
 Route::get('listtour', [ListTourController::class, 'index'])->name('listtour');
 Route::get('user-category/{slug}', [UserCategoryController::class, 'index']);
 Route::get('listtour/{slug}', [ListTourController::class, 'detailtour'])->name('tour.detail');
