@@ -1,3 +1,13 @@
+<style>
+    .fix-de {
+        width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        word-wrap: break-word;
+        /* -webkit-box-orient: vertical; */
+    }
+</style>
 @extends('layouts.admin')
 
 @section('content')
@@ -24,7 +34,7 @@
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->category->name }}</td>
-                            <td>{{ $item->descripsition }}</td>
+                            <td class="fix-de">{{ $item->descripsition }}</td>
                             <td><img src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image" width="80"
                                     height="80"></td>
                             <td>{{ number_format($item->regular_price) }}</td>

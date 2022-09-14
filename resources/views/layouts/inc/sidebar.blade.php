@@ -24,6 +24,13 @@
         </a>
 
     </li>
+    <li class="nav-item {{ Request::is('booked') ? 'active' : '' }}">
+        <a class="nav-link " href="{{ route('booked') }}">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Booked Tour</span>
+        </a>
+
+    </li>
     <li class="nav-item {{ Request::is('categories') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">

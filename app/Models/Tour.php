@@ -28,12 +28,5 @@ class Tour extends Model
     {
         return $this->belongsTo(Category::class, 'cate_id', 'id');
     }
-    public function hotel()
-    {
-        return $this->belongsTo(Hotel::class, 'hotel_id', 'id');
-    }
-    public function car()
-    {
-        return $this->belongsTo(Car::class, 'car_id', 'id');
-    }
+
 }

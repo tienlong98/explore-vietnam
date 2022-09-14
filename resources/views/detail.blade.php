@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        label {
+            margin-bottom: 10px;
+        }
+    </style>
     <div class="title-detail text-center">
         <h1>{{ $tour->name }}</h1>
     </div>
@@ -51,18 +56,51 @@
 
                                         </div>
                                     </div>
-                                    <div class="form-group d-flex mt-3">
-                                        <label class="col-form-label">Transport:</label>
-                                        <div class="d-flex fs-4 w-100 pt">
-                                            <ion-icon name="bus-outline"></ion-icon>
-                                            <ion-icon name="car-sport-outline"></ion-icon>
+                                    <div class="form-group mt-3">
+                                        <div class="hotel">
+                                            <label for="">Hotel:</label>
+                                            <select class="form-select" name="hotel_id">
+                                                <option value="" selected>Default Hotel</option>
+                                                @foreach ($hotels as $item)
+                                                    <option value="{{ $item->price }}">
+                                                        <div class="item-hotel">
+                                                            <img width="50"
+                                                                src="{{ asset('assets/uploads/hotels/' . $item->image) }}"
+                                                                alt="">
+                                                            <div class="hotel-content">
+                                                                <p>{{ $item->name }}</p>
+                                                                <p>{{ number_format($item->price) }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <div class="car">
+                                            <label for="">Car:</label>
+                                            <select class="form-select" name="car_id">
+                                                <option value="" selected>No Car</option>
+                                                @foreach ($cars as $item)
+                                                    <option value="{{ $item->price }}">
+                                                        <div class="hotel-content">
+                                                            <p>{{ $item->name }}</p>
+                                                            <p>{{ number_format($item->price) }}</p>
+                                                        </div>
+
+                                                    </option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group d-flex justify-content-between mt-3">
-                                        <label class="col-form-label">Total:</label>
+                                        <label class="col-form-label">Tour Price:</label>
                                         <div>
 
-                                            <p class="fs-3 fw-b">{{ number_format($tour->regular_price) }}$ X 1</p>
+                                            <p class="fs-3 fw-b">{{ number_format($tour->regular_price) }}$ <span
+                                                    class="fs-5">(one people)</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +133,7 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                            tabindex="0">{{ $tour->descripsition }}</div>
+                            tabindex="0">{!! $tour->descripsition !!}</div>
                         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                             tabindex="0">
 

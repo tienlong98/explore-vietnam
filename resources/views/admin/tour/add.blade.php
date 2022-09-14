@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-lg-12 mb-3">
                         <label for="" class="form-label">Description</label>
-                        <textarea class="form-control" rows="3" name="descripsition"></textarea>
+                        <textarea id="editor" class="form-control" rows="3" name="descripsition"></textarea>
                     </div>
                     <div class="col-lg-6 mb-3">
                         <label for=""> Regular Price</label>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BookedController;
 use App\Http\Controllers\Admin\CarController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\FrontendController;
@@ -80,4 +81,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('delete-car/{id}', [CarController::class, 'destroy'])->name('delete-car');
     Route::get('users', [FrontendController::class, 'user'])->name('users');
     Route::get('delete-user/{id}', [FrontendController::class, 'destroy'])->name('delete-user');
+    Route::get('admin-booked', [BookedController::class, 'index'])->name('booked');
+    Route::get('admin-booked/{id}', [BookedController::class, 'view']);
+    Route::put('update-status/{id}', [BookedController::class, 'update']);
 });

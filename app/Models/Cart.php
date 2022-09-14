@@ -16,6 +16,16 @@ class Cart extends Model
         'image',
         'pp_number',
         'de_date',
+        'hotel_id',
+        'car_id',
 
     ];
+    public function hotel()
+    {
+        return $this->belongsTo(Hotel::class, 'hotel_id', 'id');
+    }
+    public function car()
+    {
+        return $this->belongsTo(Car::class, 'car_id', 'id');
+    }
 }

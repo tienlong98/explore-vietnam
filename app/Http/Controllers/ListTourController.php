@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Car;
 use App\Models\Category;
+use App\Models\Hotel;
 use App\Models\Rating;
 use App\Models\Tour;
 use Illuminate\Http\Request;
@@ -30,7 +32,9 @@ class ListTourController extends Controller
             $trending_tour = Tour::where('trending', 1)->limit(4)->get();
             $rate = Rating::where('tour_id', $tour->id)->orderBy('created_at', 'DESC')->get();
             $rateAvg = Rating::where('tour_id', $tour->id)->avg('rating_star');
-            return view('detail', compact('tour', 'rate', 'rateAvg', 'categories', 'featured_tour', 'trending_tour'));
+            $hotels = Hotel::all();
+            $cars = Car::all();
+            return view('detail', compact('tour', 'rate', 'rateAvg', 'categories', 'featured_tour', 'trending_tour', 'hotels', 'cars'));
         } else {
             return redirect('/')->with('status', 'Slug do not exists');
         }

@@ -21,7 +21,8 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
-
+    <script src="https://cdn.tiny.cloud/1/b6in473wpqfvbfsckinbh6rh37l0ewcm6x2wtmu3eqnea4lw/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
 
 </head>
 
@@ -59,6 +60,16 @@
         </script>
     @endif
     @yield('scripts')
+    <script>
+        tinymce.init({
+            selector: 'textarea#editor',
+            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
+    </script>
 </body>
 
 </html>

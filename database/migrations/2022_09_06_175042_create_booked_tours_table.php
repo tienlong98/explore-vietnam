@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('image');
             $table->string('pp_number');
             $table->string('de_date');
+            $table->string('hotel')->nullable();
+            $table->string('car')->nullable();
             $table->decimal('total');
             $table->boolean('status')->default(false);
             $table->timestamps();

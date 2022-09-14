@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('pp_number');
             $table->string('de_date');
+            $table->string('hotel_id');
+            $table->string('car_id');
             $table->string('image')->nullable();
             $table->timestamps();
         });

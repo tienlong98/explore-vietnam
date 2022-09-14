@@ -24,12 +24,13 @@
                                 <table class="table text-center show-pc">
                                     <thead>
                                         <tr>
-                                        <tr>ID</tr>
-                                        <th>Image</th>
-                                        <th>Tour Name</th>
-                                        <th>Number of people</th>
-                                        <th>Total Price</th>
-                                        <th>Departure date</th>
+                                            <th>ID</th>
+                                            <th>Image</th>
+                                            <th>Tour Name</th>
+                                            <th>Number of people</th>
+                                            <th>Total Price</th>
+                                            <th>Departure date</th>
+                                            <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -43,8 +44,9 @@
                                                 </td>
                                                 <td>{{ $item->tourname }}</td>
                                                 <td>{{ $item->pp_number }}</td>
+                                                <td>{{ number_format($item->total) }}</td>
                                                 <td>{{ $item->de_date }}</td>
-                                                <td>{{ number_format($item->price) }}</td>
+                                                <td>{{ $item->status == 0 ? 'Chua thanh toan' : 'Da thanh toan' }}</td>
 
                                             </tr>
                                         @endforeach
