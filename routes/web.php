@@ -12,6 +12,9 @@ use App\Http\Controllers\ListyamaController;
 use  App\Http\Controllers\aboutController;
 // them mot contactController
 use App\Http\Controllers\contactController;
+
+use App\Http\Controllers\travelTipsController;
+
 use App\Http\Controllers\UserCategoryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +46,10 @@ Route::get('phuquoc', [ListyamaController::class, 'phuquoc'])->name('phuquoc');
 Route::get('about', [aboutController::class, 'about'])->name('about');
 // contact
 Route::get('contact', [contactController::class, 'contact'])->name('form');
+
+Route::get('alert',[travelTipsController::class, 'alert'])->name('alert');
+
+Route::get('safety',[travelTipsController::class, 'safety'])->name('safety');
 
 Route::get('listtour', [ListTourController::class, 'index'])->name('listtour');
 Route::get('user-category/{slug}', [UserCategoryController::class, 'index']);
