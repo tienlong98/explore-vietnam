@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    /* background: url(../images/bgdulich1.jpg) no-repeat; */
+    background-color: #131f33;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .menu-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15x;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .menu-bar a:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .menu-bar a:hover {
+    background: #fff;
+}
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+
+/* silder */
+
+.back-ground img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* team-member */
+
+hr {
+    margin: 20px 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-us .profile {
+    text-align: center;
+}
+
+
+/* .about-img::before{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: 30px;
+    border: 10px solid rgba(255,255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+} */
+
+.about-img img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    /* padding-top: 5%; */
+    border-radius: 5px;
+    align-items: center;
+}
+
+.about-text h2 {
+    color: #fff;
+    font-family: lobster;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.about-text h4 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* footer */
+
+.about-1 {
+    margin: 30px;
+    padding: 5px;
+}
+
+.about-1 h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about-1 p {
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.about-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px, 30px;
+    box-shadow: 0 0 9px rgba(0, 0, 0 .6);
+    border-radius: 5px;
+    width: auto;
+    height: 300px;
+}
+
+.about-item i {
+    font-size: 43px;
+    margin: 20px;
+}
+
+.about-item h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: nome;
+}
+
+.about-item p {
+    padding: 10px 10px;
+}
+
+.about-item:hover {
+    background: #131f33;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: #fff;
+}
+
+.about-item:hover hr {
+    background-color: #fff;
+}
+
+.about-item:hover i {
+    transform: translateY(-10px);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr {
+    transition: all 400ms ease-in-out;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer p {
+    color: #fff;
+}
+
+
+/* Responsive */
+
+@media(max-width: 960px) {
+    header .menu-bar {
+        display: none;
+    }
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+    label:hover {
+        color: #fff;
+    }
+    label .close-btn {
+        display: none;
+    }
+    #check:checked~header .menu-bar {
+        z-index: 2;
+        position: fixed;
+        background: url(../images/bgdulich3.jpg);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked~header .menu-bar a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-top: 50px;
+        letter-spacing: 2px;
+    }
+    #check:checked~header label .menu-btn {
+        display: none;
+    }
+    #check:checked~header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+    label .menu-btn {
+        position: absolute;
+    }
+    header .logo {
+        position: absolute;
+        bottom: 6px;
+    }
+    .about-text h2 {
+        color: #fff;
+        font-family: lobster;
+        font-size: 30px;
+        font-family: cursive;
+        padding-top: 5px;
+    }
+    .about-text h4 {
+        color: #fff;
+        font-size: 20px;
+    }
+}
