@@ -4,6 +4,24 @@ body {
     font-family: "Huifont";
 }
 
+.css-button {
+    color: #3c3834;
+    background-color: #ffffff;
+    letter-spacing: 0.12em;
+    padding: 11px 35px;
+    cursor: pointer;
+    border: 1px solid #3c3834;
+    box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #000000;
+        color: white;
+    }
+}
+
 img {
     object-fit: cover;
     object-position: center;
@@ -24,7 +42,7 @@ header {
     position: relative;
 
     .menu {
-        margin-left: 25px;
+        padding-left: 25px;
 
         .text-logo {
             font-family: "LifeLogo";
@@ -94,6 +112,28 @@ header {
                         display: block;
                     }
                 }
+            }
+        }
+    }
+
+    .change-menu {
+        background-color: #ffffff;
+        border-bottom: 1px solid #f4e7e0;
+        position: fixed;
+        width: 100vw;
+        box-shadow: 2px 2px 4px;
+        z-index: 999;
+        .text-logo {
+            color: #000000;
+        }
+
+        ion-icon {
+            color: #000000;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: #000000;
             }
         }
     }

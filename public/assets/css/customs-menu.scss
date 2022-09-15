@@ -5,8 +5,12 @@ body {
 }
 
 .menu {
-    margin-left: 25px;
+    padding-left: 25px;
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 2px 2px 4px;
+    z-index: 999;
 
     .text-logo {
         font-family: "LifeLogo";
@@ -40,7 +44,7 @@ body {
         padding: 0px 15px 0px 15px;
 
         .nav-link {
-            color: black;
+            color: #000000;
         }
     }
 
@@ -79,7 +83,6 @@ body {
         }
     }
 }
-
 footer {
     .logo-footer {
         position: relative;

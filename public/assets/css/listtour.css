@@ -29,11 +29,6 @@ header {
   border-top-right-radius: 5px;
 }
 
-.item-tour .item-content-tour {
-  border: 2px solid yellowgreen;
-  border-top: 0;
-}
-
 .best-tour-ex .title-best-tour {
   padding-left: 15px;
   border-left: 3px solid yellowgreen;

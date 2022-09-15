@@ -62,57 +62,26 @@
                 </div>
             </div>
             <div class="col-lg-12 text-center mb-5">
-                <h1 class="cac-tour-nt mt-5">BEST TOURS</h1>
+                <h1 class="cac-tour-nt mt-5">TRENING TOURS</h1>
                 <p>Gioi thieu gi do ve cac tours noi tieng</p>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-5">
-                <div class="item-bt">
-                    <img class="" src="{{ asset('assets/images/kp8.jpg') }}" />
-                    <div class="item-content-tour">
-                        <div class="d-flex justify-content-between">
-                            <p class="item-title fs-5 ms-3 mb-2">HA LONG</p>
-                            <p class="me-3 fs-5 mb-2">2N1D</p>
+
+            @foreach ($trending_tour as $item)
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-5">
+                    <div class="item-bt">
+                        <img class="" src="{{ asset('assets/uploads/tours/' . $item->image) }}" />
+                        <div class="item-content-tour">
+                            <div class="d-flex justify-content-between">
+                                <p class="item-title fs-5 ms-3 mb-2">{{ $item->name }}</p>
+
+                            </div>
+                            <p class="item-naiyo fs-6 ms-3">{{ $item->short_descripsition }}</p>
                         </div>
-                        <p class="item-naiyo fs-6 ms-3">Gioi thieu ve ha long...</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-5">
-                <div class="item-bt">
-                    <img class="" src="{{ asset('assets/images/kp2.jpg') }}" />
-                    <div class="item-content-tour">
-                        <div class="d-flex justify-content-between">
-                            <p class="item-title fs-5 ms-3 mb-2">HA LONG</p>
-                            <p class="me-3 fs-5 mb-2">2N1D</p>
-                        </div>
-                        <p class="item-naiyo fs-6 ms-3">Gioi thieu ve ha long...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-5">
-                <div class="item-bt">
-                    <img class="" src="{{ asset('assets/images/kp11.jpg') }}" />
-                    <div class="item-content-tour">
-                        <div class="d-flex justify-content-between">
-                            <p class="item-title fs-5 ms-3 mb-2">HA LONG</p>
-                            <p class="me-3 fs-5 mb-2">2N1D</p>
-                        </div>
-                        <p class="item-naiyo fs-6 ms-3">Gioi thieu ve ha long...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-5">
-                <div class="item-bt">
-                    <img class="" src="{{ asset('assets/images/kp4.jpg') }}" />
-                    <div class="item-content-tour">
-                        <div class="d-flex justify-content-between">
-                            <p class="item-title fs-5 ms-3 mb-2">HA LONG</p>
-                            <p class="me-3 fs-5 mb-2">2N1D</p>
-                        </div>
-                        <p class="item-naiyo fs-6 ms-3">Gioi thieu ve ha long...</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
+
 
             <div class="col-lg-12 text-center mt-5 mb-5">
                 <h1>TRAVEL TIPS</h1>

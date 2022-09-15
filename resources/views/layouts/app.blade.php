@@ -33,6 +33,8 @@
         ion-icon {
             visibility: visible !important;
         }
+
+
     </style>
 </head>
 
@@ -54,8 +56,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/listtour">Tours</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hotels</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Places to go
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ url('listyama') }}">Adventure Trails</a></li>
+                                <li><a class="dropdown-item" href="{{ url('listditich') }}">Best Heritage Sites</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url('listumi') }}">Coast and Islands</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about">About</a>
@@ -113,7 +124,8 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        class="d-none">
                                         @csrf
                                     </form>
                                 </div>

@@ -1,5 +1,31 @@
 @extends('layouts.app')
 @section('content')
+    <style>
+        .css-button {
+            color: #3c3834;
+            background-color: #ffffff;
+            letter-spacing: 0.1em;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #3c3834;
+            -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+            box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .css-button:hover {
+            background-color: #000000;
+            color: white;
+        }
+
+        sup {
+            border: 1px solid #000000;
+            padding: 2px;
+            font-size: 10px;
+        }
+    </style>
     <div>
         <header class="d-flex justify-content-center align-items-center">
             <h1>Travel by personality.</h1>
@@ -32,7 +58,7 @@
                                     <a href=" {{ url('listtour/' . $tour->slug) }}"><img
                                             src="{{ asset('assets/uploads/tours/' . $tour->image) }}" alt="Image"
                                             width="100%"></a>
-                                    <div class="item-content-tour ps-3">
+                                    <div class="item-content-tour">
                                         <div class="content-title fs-5">
                                             <a href="{{ url('listtour/' . $tour->slug) }}">
                                                 <p>{{ $tour->name }}</p>
@@ -46,16 +72,18 @@
                                             <ion-icon name="star-outline"></ion-icon>
                                             <ion-icon name="star-outline"></ion-icon>
                                         </div>
-                                        <div class="content-text">
+                                        <div class="content-text mb-3">
                                             {{ $tour->short_descripsition }}
                                         </div>
-                                        <div class="content-bottom d-flex justify-content-between">
-                                            <p class="fs-5 fw-b">{{ number_format($tour->regular_price) }}$</p>
-
-                                            @if ($tour->qty > 0)
-                                                <a href="">Book Now</a>
-                                            @else
+                                        <div class="content-bottom d-flex justify-content-between mb-4">
+                                            @if ($tour->qty < 0)
                                                 <p>Het cho</p>
+                                            @endif
+                                            @if ($tour->sale_price == 0)
+                                                <p class="fs-5 fw-b">{{ number_format($tour->regular_price) }}$</p>
+                                            @else
+                                                <p class="fs-5 fw-b">{{ number_format($tour->sale_price) }}$
+                                                    <sup>SALE</sup></p>
                                             @endif
                                         </div>
                                     </div>
@@ -130,15 +158,16 @@
                         </div>
                         @foreach ($trending_tour as $item)
                             <div class="item-best-tour d-flex">
-                                <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
-                                        alt="Image" width="80" height="80" alt=""></a>
+                                <a href="{{ url('listtour/' . $tour->slug) }}"><img
+                                        src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image"
+                                        width="80" height="80" alt=""></a>
                                 <div class="item-content">
                                     <div class="content-top">
                                         <p class="fs-5">{{ $item->name }} </p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="fs-5">{{ number_format($item->regular_price) }}$</p>
-                                        <a>Book Now</a>
+                                        <p class="fs-5">{{ $item->short_descripsition }}$</p>
+                                        <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a>
                                     </div>
                                 </div>
                             </div>

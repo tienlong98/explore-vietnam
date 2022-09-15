@@ -31,7 +31,7 @@
 
 <body>
     <header>
-        <div class="menu">
+        <div id="menu" class="menu">
 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid d-flex justify-content-around">
@@ -41,7 +41,7 @@
                         <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                     </div>
 
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="list-menu collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="/">{{ __('Home') }}</a>
@@ -49,8 +49,17 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/listtour">{{ __('Tours') }}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hotels</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Places to go
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">Adventure Trails</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('listditich') }}">Best Heritage Sites</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">Coast and Islands</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">About</a>
@@ -119,8 +128,9 @@
                             @endguest
                         </ul>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -188,12 +198,42 @@
 
     </footer>
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+
+                // if (this.scrollY > 400) {
+                //     $('.scroll-up-btn').addClass("show");
+
+                // } else {
+                //     $('.scroll-up-btn').removeClass("show");
+                // }
+                if (this.scrollY > 0) {
+                    $('#menu').addClass("change-menu");
+
+                } else {
+                    $('#menu').removeClass("change-menu");
+                }
+
+            });
+            // $('.scroll-up-btn').click(function() {
+            //     $('html').animate({
+            //         scrollTop: 0
+            //     });
+            //     $('html').css("scrollBehavior", "auto");
+            // });
+
+        });
+    </script>
     @yield('scripts')
 </body>
 

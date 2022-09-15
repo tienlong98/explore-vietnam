@@ -19,14 +19,14 @@
     </li>
     <li class="nav-item {{ Request::is('users') ? 'active' : '' }}">
         <a class="nav-link " href="{{ route('users') }}">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fa-solid fa-users"></i>
             <span>Users</span>
         </a>
 
     </li>
     <li class="nav-item {{ Request::is('booked') ? 'active' : '' }}">
         <a class="nav-link " href="{{ route('booked') }}">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fa-solid fa-mountain-sun"></i>
             <span>Booked Tour</span>
         </a>
 
@@ -49,7 +49,7 @@
     <li class="nav-item {{ Request::is('hotels') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseht"
             aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fa-solid fa-hotel"></i>
             <span>Hotels</span>
         </a>
         <div id="collapseht" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -64,7 +64,7 @@
     <li class="nav-item {{ Request::is('cars') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecar"
             aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fa-regular fa-car-rear"></i>
             <span>Cars</span>
         </a>
         <div id="collapsecar" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -79,7 +79,7 @@
     <li class="nav-item {{ Request::is('tours') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3"
             aria-expanded="true" aria-controls="collapse3">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fa-solid fa-spa"></i>
             <span>Tours</span>
         </a>
         <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionSidebar">

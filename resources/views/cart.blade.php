@@ -1,5 +1,25 @@
 @extends('layouts.app')
 @section('content')
+    <style>
+        .css-button {
+            color: #3c3834;
+            background-color: #ffffff;
+            letter-spacing: 0.1em;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #3c3834;
+            -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+            box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .css-button:hover {
+            background-color: #000000;
+            color: white;
+        }
+    </style>
     <div class="home-shop">
         <div class="container">
             <div class="row">
@@ -97,7 +117,7 @@
                             @endforeach
 
 
-                            <input type="submit" value="Submit">
+                            <input class="css-button" type="submit" value="Submit">
 
                         </div>
                     </form>

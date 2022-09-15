@@ -4,8 +4,13 @@ body {
 }
 
 .menu {
-  margin-left: 25px;
+  padding-left: 25px;
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
+  z-index: 999;
 }
 
 .menu .text-logo {
@@ -43,7 +48,7 @@ body {
 }
 
 .menu .nav-item .nav-link {
-  color: black;
+  color: #000000;
 }
 
 .menu .menu-right .login {
