@@ -47,7 +47,7 @@
                                 <a class="nav-link" href="/">{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/listtour">Tours</a>
+                                <a class="nav-link" href="/listtour">{{ __('Tours') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Hotels</a>
