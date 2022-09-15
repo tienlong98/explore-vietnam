@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 class travelTipsController extends Controller
 {
-    public function alert(){
-        return view('alert');
+    public function transport(){
+        return view('transport');
     }
 
     public function safety(){
         return view('safety');
+    }
+    public function weather(){
+        return view('weather');
     }
 }

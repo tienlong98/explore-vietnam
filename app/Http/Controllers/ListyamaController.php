@@ -18,6 +18,8 @@ class ListyamaController extends Controller
     {
         return view('listumi');
     }
+
+    // list review
     public function sapa()
     {
         return view('sapa');
@@ -25,5 +27,18 @@ class ListyamaController extends Controller
     public function phuquoc()
     {
         return view('phuquoc');
+    }
+
+    public function camau()
+    {
+        return view('camau');
+    }
+    public function phanxipang()
+    {
+        return view('phanxipang');
+    }
+    public function rungduabaymau()
+    {
+        return view('rungduabaymau');
     }
 }

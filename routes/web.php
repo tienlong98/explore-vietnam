@@ -43,16 +43,22 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('/'
 Route::get('listyama', [ListyamaController::class, 'index'])->name('listyama');
 Route::get('listditich', [ListyamaController::class, 'index1'])->name('listditich');
 Route::get('listumi', [ListyamaController::class, 'index2'])->name('listumi');
+// list review
 Route::get('sapa', [ListyamaController::class, 'sapa'])->name('sapa');
 Route::get('phuquoc', [ListyamaController::class, 'phuquoc'])->name('phuquoc');
+Route::get('camau', [ListyamaController::class, 'camau'])->name('camau');
+Route::get('phanxipang', [ListyamaController::class, 'phanxipang'])->name('phanxipang');
+Route::get('rungduabaymau', [ListyamaController::class, 'rungduabaymau'])->name('rungduabaymau');
 // about
 Route::get('about', [aboutController::class, 'about'])->name('about');
 // contact
 Route::get('contact', [contactController::class, 'contact'])->name('form');
-
-Route::get('alert',[travelTipsController::class, 'alert'])->name('alert');
-
+// list travel tips
+Route::get('transport',[travelTipsController::class, 'transport'])->name('transport');
 Route::get('safety',[travelTipsController::class, 'safety'])->name('safety');
+Route::get('weather',[travelTipsController::class, 'weather'])->name('weather');
+
+
 
 Route::get('listtour', [ListTourController::class, 'index'])->name('listtour');
 Route::get('user-category/{slug}', [UserCategoryController::class, 'index']);

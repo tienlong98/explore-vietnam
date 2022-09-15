@@ -44,19 +44,19 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">{{ __('Home') }}</a>
+                                <a class="nav-link" href="/">{{ __('ホーム') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/listtour">{{ __('Tours') }}</a>
+                                <a class="nav-link" href="/listtour">{{ __('ツアー') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Hotels</a>
+                                <a class="nav-link" href="#">{{ __('ホテル') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/about">About</a>
+                                <a class="nav-link" href="/about">{{ __('よこそ') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
+                                <a class="nav-link" href="/contact">{{ __('コンタクト') }}</a>
                             </li>
                         </ul>
                     </div>
@@ -72,12 +72,12 @@
                                     <li><a class="dropdown-item"
                                             href="{{ route('change_language', ['locale' => 'en']) }}"><img
                                                 src="{{ asset('assets/images/us.png') }}"
-                                                class="icon-language">English</a>
+                                                class="icon-language">{{ __('英語') }}</a>
                                     </li>
                                     <li><a class="dropdown-item"
                                             href="{{ route('change_language', ['locale' => 'jp']) }}"><img
                                                 src="{{ asset('assets/images/japan.png') }}"
-                                                class="icon-language">Japanese</a>
+                                                class="icon-language">{{ __('日本語') }}</a>
                                     </li>
                                 </ul>
                             </li>
@@ -144,9 +144,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 text-footer-left text-center fw-bold">
-                    <p>PRIVACY POLICY</p>
-                    <P>TEAM & CONDITIONS</P>
-                    <P>ABOUT</P>
+                    <p>{{ __('プライバシーポリシー') }}</p>
+                    <P>{{ __('チームと条件') }}</P>
+                    <P>{{ __('よこそ') }}</P>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 text-footer-center">
                     <div class="d-flex justify-content-center">
@@ -160,7 +160,7 @@
                         <div class="line mt-4"></div>
                     </div>
                     <div class=" text-center mt-4">
-                        <p class="fw-bold">WEEKLY NEWSLETTER</p>
+                        <p class="fw-bold">{{ __('週刊ニュースレター') }}</p>
                     </div>
                     <div class="d-flex justify-content-center text-center fw-bold mt-4">
                         <table>
@@ -168,7 +168,7 @@
                                 <td>NAME@EMAIL>COM</td>
                             </tr>
                             <tr>
-                                <td>SUBSCRIBE</td>
+                                <td>{{ __('申し込む') }}</td>
                             </tr>
                         </table>
                     </div>
@@ -179,9 +179,9 @@
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 text-footer-right text-center fw-bold">
-                    <p>PAYMENT INFO</p>
-                    <P>RETURN | EXCHANGES</P>
-                    <P>CONTACT</P>
+                    <p>{{ __('支払い') }}</p>
+                    <P>{{ __('戻る |取引所') }}</P>
+                    <P>{{ __('コンタクト') }}</P>
                 </div>
             </div>
         </div>
