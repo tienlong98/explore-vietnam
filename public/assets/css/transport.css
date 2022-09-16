@@ -9,7 +9,7 @@
 body {
     font-family: "Huifont";
     padding: 0 12vh;
-    background-color: #6b051f;
+    background-color: #049a54;
 }
 
 body::after {
@@ -39,7 +39,7 @@ body::after {
     color: azure;
 }
 
-.mini-menu p {}
+
 
 .fa-sharp {
     color: azure;
@@ -55,11 +55,11 @@ body::after {
 }
 
 .mini-menu .travel-icon:hover {
-    color: #9a0404;
+    color: #049a54;
 }
 
 .mini-menu .fa-sharp:hover {
-    color: #9a0404;
+    color: #049a54;
 }
 
 
@@ -82,7 +82,7 @@ display: block;
 /* banner */
 
 .wrap h1 {
-    color: #9a0404;
+    color: #049a54;
     font-family: 'Rouge Script', cursive;
     font-size: 50px;
     font-weight: normal;
@@ -94,10 +94,10 @@ display: block;
 
 #banner {
     border-radius: 5px;
-    border: solid sandybrown;
+    border: solid #049a54;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 
@@ -111,13 +111,14 @@ display: block;
     /* width: 350px;
 height: 370px; */
     background-color: aliceblue;
-    padding: 10px;
+    padding: 30px 10px;
     border-radius: 10px;
     border: none;
 }
 
 .card ul {
-    padding-left: 5px;
+    /* padding-top: 5px; */
+    padding: 40px 5px;
     min-width: 100%
 }
 
@@ -147,7 +148,7 @@ height: 370px; */
     text-overflow: ellipsis;
     width: 100%;
     display: inline-block;
-    font-size: 15spx;
+    font-size: 20px;
 }
 
 .card ul li:hover span {
@@ -164,7 +165,7 @@ height: 370px; */
     top: 0;
     left: 0;
     transition: all 0.8s;
-    border: 2px solid #9a0404;
+    border: 2px solid #049a54;
     box-sizing: border-box
 }
 
@@ -176,13 +177,13 @@ height: 370px; */
     height: 5px;
     width: 5px;
     transform: rotate(45deg);
-    border-top: 2px solid #9a0404;
-    border-right: 2px solid #9a0404
+    border-top: 2px solid #049a54;
+    border-right: 2px solid #049a54
 }
 
 .card ul li:hover::before {
     width: 100%;
-    background-color: #9a0404
+    background-color: #049a54
 }
 
 @media(max-width: 1224px) {
@@ -198,6 +199,9 @@ height: 370px; */
         justify-content: center;
         padding: 0 0;
         margin: 0 0;
+    }
+    #banner {
+        width: 60%;
     }
     .card ul {
         padding-left: 0;
