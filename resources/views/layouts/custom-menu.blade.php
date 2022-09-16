@@ -37,7 +37,7 @@
                 <div class="container-fluid d-flex justify-content-around">
                     <div class="logo">
                         <ion-icon name="heart-outline" class="icon-1"></ion-icon>
-                        <a class="text-logo" href="#">Viet Nam</a>
+                        <a class="text-logo" href="#">{{ __('ベトナム') }}</a>
                         <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                     </div>
 
@@ -52,13 +52,13 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Places to go
+                                    {{ __('行き場') }}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">Adventure Trails</a></li>
-                                    <li><a class="dropdown-item" href="{{ url('listditich') }}">Best Heritage Sites</a>
+                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">{{ __('冒険旅行') }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('listditich') }}">{{ __('人気遺産') }}</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">Coast and Islands</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">{{ __('海岸と島々') }}</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

@@ -4,7 +4,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-
+html,
 body {
   /* background: url(./image/BG1.jpg) no-repeat center center fixed; */
   -webkit-background-size: cover;
@@ -12,12 +12,28 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.container{
+  padding-top: 50px;
+}
+
+.company-address .address{
+  font-size: 50px;
+}
+
+.company-address{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.company-address p{
+  margin-bottom: 0;
+}
+
 .form-contact{
-  background-color: #fff;
   padding: 5px 5px;
   border-radius: 20px;
-  margin-top: 30px;
-
+  margin-top: 0;
 }
 
 .form-contact form{
@@ -41,7 +57,7 @@ margin-right: 200px;
 height: 30px;
 width: 40%;
 border: solid 1px;
-background-color: #fff8f8;;
+background-color: #fff;;
 }
 
 
@@ -56,7 +72,7 @@ vertical-align:top;
 height: 150px;
 width: 40%;
 border: solid 1px;
-background-color: #fff8f8;;
+background-color: #fff;;
 
 }
 
