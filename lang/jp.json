@@ -1,13 +1,37 @@
 {
+    "explore":"探検s",
+    "Viet Nam":"ベトナム",
+
     "Home": "ホーム",
    "Tours": "ツアー",
    "Hotels":"ホテル",
    "About": "よこそ",
    "Contact": "コンタクト",
+   "Places to go":"行き場",
+   "Adventure Trails":"冒険旅行",
+   "Best Heritage Sites":"人気遺産",
+   "Coast and Islands":"海岸と島々",
    "English": "英語",
    "Japanese": "日本語",
    "Login": "ログイン",
    "Register": "新規",
+
+    "home.LIVE FULLY IN VIETNAM":"完全にベトナムで暮らす",
+    "Spectacular nature. Exceptional cuisine. Cultural diversity.Excellent service.":"壮観な自然。素晴らしい料理。文化の多様性。すばらしいサービス。",
+    "Vietnam has fully reopened for international tourism without anyCovid-19 restrictions. Now you are free to discover and enjoyvarious wild nature destinations like limestone mountains, greenterraced rice fields, and white sandy beaches. Holiday is coming,let’s get away from it all.":"ベトナムは、Covid-19の制限なしで国際観光を完全に再開しました。 今では、石灰岩の山々、緑の棚田、白い砂浜など、さまざまな野生の自然の目的地を自由に発見して楽しむことができます. 休暇が近づいています。さあ行こう",
+    "Take in new sites, sounds, and flavors. Experiences that are truly memorable. Let’s explore, relax, and play. Live fully in Vietnam.":"新しいサイト、サウンド、フレーバーを取り入れてください。 本当に思い出に残る体験。 探検し、リラックスし、遊びましょう。 ベトナムに完全に休もう。",
+    "recommendation":"おすすめ",
+    "TRENDING TOURS":"トレンドのツアー",
+    "TRAVEL TIPS":"旅行のヒント",
+    "Prepare for your trip with these practical articles":"これらの実用的な記事で旅行の準備をしましょう",
+    "TRANSPORT":"交通",
+    "WEATHER":"天気",
+    "SAFETY":"安全",
+    "HISTORYs":"歴史",
+    "SHARE YOUR STORY":"ストーリーを共有しよう",
+    "Tag your best #ExploreVietnam moments on Instagram":"インスタグラム で最高の #探検ーベトナム の瞬間をタグ付けしてください",
+
+
  
    "PRIVACY POLICY": "プライバシーポリシー",
    "TEAM & CONDITIONS": "チームと条件",

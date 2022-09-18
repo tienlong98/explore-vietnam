@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
+    
     <section>
         <!-- <input type="checkbox" id="check">
         <header>
@@ -52,7 +53,7 @@
                             </div>
                             <div class=" profile col-lg-6 col-lg-offset-1">
                                 <div class="about-text">
-                                    <h2>Đoàn Ngọc Sinh</h2>
+                                    <h2>Doan Ngoc Sinh</h2>
                                     <h3>Project Manager</h3>
                                     <p class="lh-lg">インターンシップで得ること。（学んだこと、楽しかったこと、経験したこと、貢献したこと、役に立つなど） PM立場として、理系―文系関係なく、皆の意見を尊重し、平等に誰でも発言しやすいテーム雰囲気を作っていきたいと思っています。そして、各メンバーの役割や長所を活かして、　意欲的にアイデアを提案するなどの貢献をしたいと考えています。
                                     </p>
@@ -71,7 +72,7 @@
                             </div>
                             <div class=" profile col-lg-6 col-lg-offset-1">
                                 <div class="about-text">
-                                    <h2>Nguyễn Thị Thanh Hương</h2>
+                                    <h2>Nguyen Thi Thanh Huong</h2>
                                     <h4>Project Leader Content</h4>
                                     <p class="lh-lg">NALのインターンシップは私の事務の初体験とは言えます。この大きなプロジェクトを通じてチームワーク、コミュニケーション、リーダーシップという色んな能力を高めるばかりか、ウェブデザイン、管理など新しいことも体験できました。プロジェクトの作成方、順番、人のそれぞれの立場をしっかり理解できました。インターンシップが参加でき、本当によかったと思います。
                                     </p>
@@ -89,7 +90,7 @@
                             </div>
                             <div class=" profile col-lg-6 col-lg-offset-1">s
                                 <div class="about-text">
-                                    <h2>Nguyễn Hữu Thuận</h2>
+                                    <h2>Nguyen Huu Thuan</h2>
                                     <h4>Content Editor </h4>
                                     <p class="lh-lg">インターンシップを通じてチームワークの仕組みを理解することができ、プロジェクトの進み方やタスクを作成するシステムを始めて体験しました。チーム内のコミュニケーションや役割分担が大事ということを学べました。このインターンシップを参加してよかったです。</p>
                                 </div>
@@ -106,7 +107,7 @@
                             </div>
                             <div class=" profile col-lg-6 col-lg-offset-1">
                                 <div class="about-text">
-                                    <h2>Tiêu Lương Phước Anh</h2>
+                                    <h2>Tieu Luong Phuoc Anh</h2>
                                     <h4>Project Leader Developers </h4>
                                     <p class="lh-lg">リーダーとして皆と一緒にウェブを作るのは楽しいです。皆が熱心だし上手だしそれでありがたいです。</p>
                                 </div>
@@ -123,7 +124,7 @@
                             </div>
                             <div class=" profile col-lg-6 col-lg-offset-1">
                                 <div class="about-text">
-                                    <h2>Phạm Thanh Long</h2>
+                                    <h2>Pham Thanh Long</h2>
                                     <h4>Developers</h4>
                                     <p class="lh-lg">貴社のインターンシップでは幅広いスキルアップやキャリアパスが挑戦できる環境があるし、若いうちから、能力や個性に応じて、自分が目指したいこと、やりたいことに挑戦でき、自分の理想と一致しました。インターンシップを通じて、新たな知識を学び、意欲的にアイデアを提案するなどの貢献をしたいと考えています。</p>
                                 </div>
@@ -140,7 +141,7 @@
                             </div>
                             <div class=" profile col-lg-6 col-lg-offset-1">
                                 <div class="about-text">
-                                    <h2>Nguyễn Hoàng Lân</h2>
+                                    <h2>Nguyen Hoang Lan</h2>
                                     <h4>Developers</h4>
                                     <p class="lh-lg">インターンシップで僕はDEVとして役割を持って、プログラミングやコーディングだけでなく、チームのメンバーとのコミュニケーションを大切にしなければなりません。そして、インターンシップのおかげで、職場環境のことがなんとなく理解できるようになりました。それに、チームが目標を達成するため、コツコツ頑張っています。</p>
                                 </div>

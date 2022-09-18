@@ -44,7 +44,7 @@
             <div class="container-fluid d-flex justify-content-around">
                 <div class="logo">
                     <ion-icon name="heart-outline" class="icon-1"></ion-icon>
-                    <a class="text-logo" href="#">Viet Nam</a>
+                    <a class="text-logo" href="#">{{ __('ベトナム') }}</a>
                     <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                 </div>
 
@@ -57,16 +57,16 @@
                             <a class="nav-link" href="/listtour">{{ __('ツアー') }}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Places to go
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ url('listyama') }}">Adventure Trails</a></li>
-                                <li><a class="dropdown-item" href="{{ url('listditich') }}">Best Heritage Sites</a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ url('listumi') }}">Coast and Islands</a></li>
-                            </ul>
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ __('行き場') }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">{{ __('冒険旅行') }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('listditich') }}">{{ __('人気遺産') }}</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">{{ __('海岸と島々') }}</a></li>
+                                </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about">{{ __('よこそ') }}</a>
@@ -172,7 +172,7 @@
                         <div class="line mt-4"></div>
                     </div>
                     <div class=" text-center mt-4">
-                        <p class="fw-bold">WEEKLY NEWSLETTER</p>
+                        <p class="fw-bold">{{ __('週刊ニュースレター') }}</p>
                     </div>
                     <div class="d-flex justify-content-center text-center fw-bold mt-4">
                         <table>
@@ -180,7 +180,7 @@
                                 <td>NAME@EMAIL>COM</td>
                             </tr>
                             <tr>
-                                <td>SUBSCRIBE</td>
+                                <td>{{ __('申し込む') }}</td>
                             </tr>
                         </table>
                     </div>

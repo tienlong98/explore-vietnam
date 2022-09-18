@@ -4,28 +4,21 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 best-tour text-center mt-5">
-                <h1 class="title-bt">{{ __('home.LIVE FULLY IN VIETNAM') }}</h1>
+                <h1 class="title-bt">{{ __('完全にベトナムで暮らす') }}</h1>
                 <div class="text-title fs-5">
                     <p class="text-title">
-                        " Spectacular nature. Exceptional cuisine. Cultural diversity.
-                        Excellent service. <br /><br />
-                        Vietnam has fully reopened for international tourism without any
-                        Covid-19 restrictions. Now you are free to discover and enjoy
-                        various wild nature destinations like limestone mountains, green
-                        terraced rice fields, and white sandy beaches. Holiday is coming,
-                        let’s get away from it all.
+                        {{ __('壮観な自然。素晴らしい料理。文化の多様性。すばらしいサービス。') }}<br /><br />
+                        {{ __('ベトナムは、Covid-19の制限なしで国際観光を完全に再開しました。 今では、石灰岩の山々、緑の棚田、白い砂浜など、さまざまな野生の自然の目的地を自由に発見して楽しむことができます. 休暇が近づいています。さあ行こう') }}
                         <br /><br />
-                        Take in new sites, sounds, and flavors. Experiences that are truly
-                        memorable. Let’s explore, relax, and play. Live fully in Vietnam.
-                        "
+                        {{ __('新しいサイト、サウンド、フレーバーを取り入れてください。 本当に思い出に残る体験。 探検し、リラックスし、遊びましょう。 ベトナムに完全に休もう。') }}
                     </p>
                     <h1>︾</h1>
                 </div>
                 <p class="text-title"></p>
             </div>
             <div class="col-lg-12 mt-5 mb-5 text-center">
-                <h1>Places to go</h1>
-                <p>Gioi thieu gi do ve cac dia diem du lich noi tieng</p>
+                <h1>{{ __('行き場') }}</h1>
+                <p>{{ __('おすすめ') }}</p>
             </div>
             <div class="ks mb-5">
                 <div class="row justify-content-center">
@@ -34,7 +27,7 @@
                             <a href="/listyama">
                                 <img src="{{ asset('assets/images/ptg3.jpg') }}" />
                                 <div class="item-content-ks d-flex justify-content-center align-items-center">
-                                    <p>Adventure Trails</p>
+                                    <p>{{ __('冒険旅行') }}</p>
                                 </div>
                             </a>
                         </div>
@@ -44,7 +37,7 @@
                             <a href="/listditich">
                                 <img src="{{ asset('assets/images/ptg6.png') }}" />
                                 <div class="item-content-ks d-flex justify-content-center align-items-center">
-                                    <p>Best Heritage Sites</p>
+                                    <p>{{ __('人気遺産') }}</p>
                                 </div>
                             </a>
                         </div>
@@ -54,7 +47,7 @@
                             <a href="/listumi">
                                 <img src="{{ asset('assets/images/ptg4.jpg') }}" />
                                 <div class="item-content-ks d-flex justify-content-center align-items-center">
-                                    <p>Coast and Islands</p>
+                                    <p>{{ __('海岸と島々') }}</p>
                                 </div>
                             </a>
                         </div>
@@ -62,8 +55,8 @@
                 </div>
             </div>
             <div class="col-lg-12 text-center mb-5">
-                <h1 class="cac-tour-nt mt-5">TRENING TOURS</h1>
-                <p>Gioi thieu gi do ve cac tours noi tieng</p>
+                <h1 class="cac-tour-nt mt-5">{{ __('トレンドのツアー') }}</h1>
+                <p>{{ __('おすすめ') }}</p>
             </div>
 
             @foreach ($trending_tour as $item)
@@ -84,40 +77,40 @@
 
 
             <div class="col-lg-12 text-center mt-5 mb-5">
-                <h1>TRAVEL TIPS</h1>
-                <p>Prepare for your trip with these practical articles</p>
+                <h1>{{ __('旅行のヒント') }}</h1>
+                <p>{{ __('これらの実用的な記事で旅行の準備をしましょう') }}</p>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <ion-icon name="car-sport-outline"></ion-icon>
-                    <p class="fs-4">TRANSPORT</p>
+                    <p class="fs-4">{{ __('交通') }}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <ion-icon name="thunderstorm-outline"></ion-icon>
-                    <p class="fs-4">WEATHER</p>
+                    <p class="fs-4">{{ __('天気') }}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <ion-icon name="shield-outline"></ion-icon>
-                    <p class="fs-4">SAFETY</p>
+                    <p class="fs-4">{{ __('安全') }}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <ion-icon name="book-outline"></ion-icon>
-                    <p class="fs-4">HISTORY</p>
+                    <p class="fs-4">{{ __('歴史') }}</p>
                 </div>
             </div>
 
             <div class="sokaibasho">
                 <div class="title-sokai text-center mt-5 mb-5">
-                    <h1>SHARE YOUR STORY</h1>
+                    <h1>{{ __('ストーリーを共有しよう') }}</h1>
                     <p>
-                        Tag your best #ExploreVietnam moments on Instagram
+                    {{ __('インスタグラム で最高の #探検ーベトナム の瞬間をタグ付けしてください') }}
                     </p>
                 </div>
                 <div class="sokai-content">
