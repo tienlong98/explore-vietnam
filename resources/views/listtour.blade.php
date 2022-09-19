@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                     <div class="title-tour mt-5 mb-5">
-                        <h3 class="fw-b">List Tour</h3>
+                        <h3 class="fw-b">{{ __('リストツアー') }}</h3>
                     </div>
                     <div class="sapxep mb-5">
                         <div class="row">
@@ -123,7 +123,7 @@
                     </div>
                     <div class="best-tour-ex mb-5">
                         <div class="title-best-tour">
-                            <p class="fs-4 fw-b">All Categories</p>
+                            <p class="fs-4 fw-b">{{ __('すべてのカテゴリ') }}</p>
                         </div>
                         @foreach ($categories as $item)
                             <div class="css-dmh fix-bd-1 mb-3">
@@ -142,7 +142,7 @@
                     </div>
                     <div class="best-tour-ex mb-5">
                         <div class="title-best-tour">
-                            <p class="fs-4 fw-b">Featured Tour</p>
+                            <p class="fs-4 fw-b">{{ __('注目のツアー') }}</p>
                         </div>
                         @foreach ($featured_tour as $item)
                             <div class="item-best-tour d-flex">
@@ -165,7 +165,7 @@
                     </div>
                     <div class="best-tour-ex mb-5">
                         <div class="title-best-tour">
-                            <p class="fs-4 fw-b">Trending Tour</p>
+                            <p class="fs-4 fw-b">{{ __('トレンドのツアー') }}</p>
                         </div>
                         @foreach ($trending_tour as $item)
                             <div class="item-best-tour d-flex">

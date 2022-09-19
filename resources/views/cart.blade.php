@@ -25,10 +25,10 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <h1 class="title-shop">
-                        Cart
+                    {{ __('カート') }}
                     </h1>
                     <p class="text-shop">
-                        Home: <span>Cart</span>
+                    {{ __('ホーム') }}: <span>{{ __('カート') }}</span>
                     </p>
                 </div>
             </div>
@@ -46,11 +46,11 @@
                                 <thead>
                                     <tr>
 
-                                        <th>Image</th>
-                                        <th>Tour Name</th>
-                                        <th>Number of people</th>
-                                        <th>Price</th>
-                                        <th>Departure date</th>
+                                        <th>{{ __('イメージ') }}</th>
+                                        <th>{{ __('ツアー') }}</th>
+                                        <th>{{ __('人数') }}</th>
+                                        <th>{{ __('価格') }}</th>
+                                        <th>{{ __('出発日') }}</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -67,7 +67,7 @@
                                             <th>{{ number_format($item->price) }}</th>
                                             <td>{{ $item->de_date }}</td>
                                             <td><a href="{{ url('delete-cart/' . $item->id) }}"
-                                                    class="btn btn-danger">Delete</a></td>
+                                                    class="btn btn-danger">{{ __('消し') }}</a></td>
                                         </tr>
                                     @endforeach
 
@@ -77,25 +77,25 @@
 
                         </div>
                         <div class="card-footer">
-                            <p>Subtotal Price: {{ number_format($item->subtotal) }}</p>
-                            <p>Tax Price: {{ number_format($item->tax) }}</p>
-                            <p>Hotel Price: {{ number_format($item->hotel_id) }}</p>
-                            <p>Car Price: {{ number_format($item->car_id) }}</p>
-                            <p>Total Price: {{ number_format($item->total) }}</p>
+                        <p>{{ __('税金抜') }}: {{ number_format($item->subtotal) }}</p>
+                            <p>{{ __('税金') }}: {{ number_format($item->tax) }}</p>
+                            <p>{{ __('ホテル料金') }}: {{ number_format($item->hotel_id) }}</p>
+                            <p>{{ __('車の料金') }}: {{ number_format($item->car_id) }}</p>
+                            <p>{{ __('合計金額') }}: {{ number_format($item->total) }}</p>
                             <input type="hidden" value="{{ number_format($item->total) }}">
                         </div>
                     </div>
 
                     <div class="pttt">
-                        <h3 class="mb-5">Phuong thuc thanh toan</h3>
+                        <h3 class="mb-5">{{ __('支払い方法') }}</h3>
                         <div class="row">
 
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <p>Thanh toan bang PayPay or Line Pay</p>
+                                <p>{{ __('ペイペイーQRコード') }}</p>
                                 <img src="{{ asset('assets/images/paypay.png') }}" alt="">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <p>Thanh toan bang the Visa</p>
+                                <p>{{ __('Visaカード') }}</p>
                                 <img width="50%" src="{{ asset('assets/images/visa.png') }}" alt="">
                             </div>
                         </div>

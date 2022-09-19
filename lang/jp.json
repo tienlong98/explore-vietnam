@@ -16,7 +16,7 @@
    "Login": "ログイン",
    "Register": "新規",
 
-    "home.LIVE FULLY IN VIETNAM":"完全にベトナムで暮らす",
+    "LIVE FULLY IN VIETNAM":"完全にベトナムで暮らす",
     "Spectacular nature. Exceptional cuisine. Cultural diversity.Excellent service.":"壮観な自然。素晴らしい料理。文化の多様性。すばらしいサービス。",
     "Vietnam has fully reopened for international tourism without anyCovid-19 restrictions. Now you are free to discover and enjoyvarious wild nature destinations like limestone mountains, greenterraced rice fields, and white sandy beaches. Holiday is coming,let’s get away from it all.":"ベトナムは、Covid-19の制限なしで国際観光を完全に再開しました。 今では、石灰岩の山々、緑の棚田、白い砂浜など、さまざまな野生の自然の目的地を自由に発見して楽しむことができます. 休暇が近づいています。さあ行こう",
     "Take in new sites, sounds, and flavors. Experiences that are truly memorable. Let’s explore, relax, and play. Live fully in Vietnam.":"新しいサイト、サウンド、フレーバーを取り入れてください。 本当に思い出に残る体験。 探検し、リラックスし、遊びましょう。 ベトナムに完全に休もう。",
@@ -40,9 +40,24 @@
    "RETURN | EXCHANGES": "戻る |取引所",
    "WEEKLY NEWSLETTER": "週刊ニュースレター",
    "SUBSCRIBE": "申し込む",
- 
- 
- 
+
+    "〒105-0004 6-20-4 Shimbashi, Minato-ku, Tokyo Shimbashi Pine Building 4F":"〒105-0004 東京都港区新橋６丁目２０−４ 新橋パインビル 4階",
+   "*Information*":"＊お客様情報＊",
+   "Name":"氏名 *",
+   "Furigana":"ふりがな",
+   "Email":"メールアドレス*:",
+    "Phone":"電話番号*:",
+    "＊Inquiry＊":"＊お問わせ内容＊",
+    "Fill in :":"ご記入 :",
+    "Consent Form for the Handling of Personal Information":"下記、個人情報の取扱いに同意します",
+    "Send":"送信",
+
+    "About Us":"私たちについて",
+    "Number of people:":"人数",
+    "Date":"日付",
+    "Booking":"予約",
+
+
    "Ca Mau Floating Market": "カマウ水上マーケット",
    "Where is Ca Mau Floating Market?": "カマウ水上マーケットはどこ？",
    "Ca Mau Floating Market is located at the edge of the Gang Hao River, about 200 meters from the Gang Hao Bridge in District 8, in the heart of Ca Mau City. The Ca Mau Floating Market is as busy as any other floating market in the West. There are hundreds of boats here, large and small, full of goods that can be exchanged and traded here. No one knows when this floating market existed, but it has long been a distinctive cultural feature, especially in Ca Mau and the Southern River region in general.":"カマウ水上マーケットは、カマウ市の中心部、8 区のガンハオ橋から約 200 メートル、ガンハオ川の端に位置している。 カマウ水上マーケットは、西部の他の水上マーケットと同じくらいにぎやかである。 ここには何百ものボートがあり、大小さまざまなボートが商品でいっぱいで、ここで交換したり取引したりできる。 この市場がいつ形成されたのかは誰にもわかりませんが、長い間、この市場は特にカマウとサザンリバー地域全般の独特の文化的特徴となっている。",
@@ -104,9 +119,48 @@
     "*Cycling to Cam Thanh Village*":"*Cam Thanh 村へのサイクリング*",
     "After admiring the green coconut forest, rent a bike and explore Cam Thanh Village. A trip to immerse yourself in the beautiful and tranquil space of vast rice fields and breathe in the countryside air with the scent of ripe rice.":"緑のココナッツの森を眺めた後、自転車をレンタルして Cam Thanh 村を散策します。 広大な田んぼの美しいのどかな空間に浸り、熟した米の香りとともに田舎の空気を胸いっぱいに吸い込む旅。",
     "*Enjoy Hoi An specialties in the homes of the locals*":"*地元の人々の家でホイアンの特産品を楽しむ*",
-    "On your journey to discover the coconut forests of Hoi An, do not hesitate to invite the locals to have the most authentic experience of rustic life in this village. Tasty dishes include spring rolls, sweet and sour shrimp salad, banana blossom salad, and central pancakes. You can also enjoy these delicious dishes at the Bay Mau Coconut Forest Restaurant.":"ホイアンのココナッツの森を発見する旅では、この村で素朴な生活の最も本物の体験をするために地元の人々の招待を躊躇しないでください. これ. 春巻き、甘酸っぱいエビのサラダ、バナナの花のサラダ、セントラル パンケーキなどのおいしい料理をお楽しみいただけます。また、ベイ マウ ココナッツ フォレスト レストランでもこれらのおいしい料理をお楽しみいただけます。"
+    "On your journey to discover the coconut forests of Hoi An, do not hesitate to invite the locals to have the most authentic experience of rustic life in this village. Tasty dishes include spring rolls, sweet and sour shrimp salad, banana blossom salad, and central pancakes. You can also enjoy these delicious dishes at the Bay Mau Coconut Forest Restaurant.":"ホイアンのココナッツの森を発見する旅では、この村で素朴な生活の最も本物の体験をするために地元の人々の招待を躊躇しないでください. これ. 春巻き、甘酸っぱいエビのサラダ、バナナの花のサラダ、セントラル パンケーキなどのおいしい料理をお楽しみいただけます。また、ベイ マウ ココナッツ フォレスト レストランでもこれらのおいしい料理をお楽しみいただけます。",
 
-    
-    
+
+    "List Tour":"リストツアー",
+    "Default":"既定",
+    "Sort by newness":"新しさで並べ替え",
+    "Sort by Featured":"おすすめ並べ",
+    "Sort by price: low to high":"価格で並べ替え: 安い順",
+    "Sort by price: high to low":"価格で並べ替え: 高い順",
+    "All Categories":"すべてのカテゴリ",
+    "Featured Tour":"注目のツアー",
+    "more":"もっと",
+
+
+    "Desciption":"説明",
+    "Review":"レビュー",
+    "one people":"一人分",
+    "Tour Price":"価格",
+    "No":"ない",
+    "Default Hotel":"デフォルト ホテル",
+    "Select departure date:":"出発日を選択",
+    "Car":"車",
+
+    "Cart":"カート",
+    "Image":"イメージ",
+    "Departure date":"出発日",
+    "Delete":"消し",
+    "Subtotal Price":"税金抜",
+    "Tax Price":"税金",
+    "Hotel Price":"ホテル料金",
+    "Car Price":"車の料金",
+    "Total Price":"合計金額",
+    "payment":"支払い方法",
+    "PayPay":"ペイペイーQRコード",
+    "Visa Card":"Visaカード",
+
+    "Status":"状態",
+    "sold out":"売り切れ",
+
+    "List Adventure Trails":"冒険旅行ツアーリスト" ,
+    "List Coast and Islands":"海岸と島々ツアーリスト" ,
+    "List Best Heritage Sites":"人気遺産ツアーリスト"  
+
 
 }

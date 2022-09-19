@@ -6,6 +6,21 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    /* background: url(../images/bgdulich1.jpg) no-repeat; */
+    /* background-color: #131f33; */
+    background: linear-gradient(#131f33 ,#131f33,#131f33,#131f33,#131f33,#131f33,#131f33,#fff,#fff);
+    background-size: cover;
+    background-position: center;
+}
+
 section {
     position: relative;
     width: 100%;
@@ -13,14 +28,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: black;
-    /* background: url(../images/bgdulich1.jpg) no-repeat; */
-    background-color: #131f33;
-    background-size: cover;
-    background-position: center;
+    
 }
 
-header {
+
+
+/* header {
     position: relative;
     color: #fff;
     top: 0;
@@ -54,9 +67,9 @@ header .menu-bar a {
 
 header .menu-bar a:not(:last-child) {
     margin-right: 30px;
-}
+} */
 
-header .menu-bar a:hover {
+/* header .menu-bar a:hover {
     background: #fff;
 }
 
@@ -67,7 +80,7 @@ label {
 #check {
     z-index: 3;
     display: none;
-}
+} */
 
 
 /* silder */
@@ -81,11 +94,12 @@ label {
 
 /* team-member */
 
-hr {
+.hr{
     margin: 20px 0;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #fff;
+   
 }
 
 .about-us {
@@ -131,9 +145,21 @@ hr {
     font-family: cursive;
 }
 
+.about-text h3 {
+    
+    
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+}
+
+
 .about-text h4 {
     font-size: 30px;
     color: #fff;
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
 }
 
 .about-text {
@@ -170,6 +196,7 @@ hr {
     border-radius: 5px;
     width: auto;
     height: 300px;
+    cursor: pointer;
 }
 
 .about-item i {
@@ -180,6 +207,9 @@ hr {
 .about-item h3 {
     font-size: 25px;
     margin-bottom: 10px;
+    border-left: none;
+    text-align: center;
+    padding-left: none;
 }
 
 .about-item hr {
@@ -220,16 +250,24 @@ hr {
 
 footer {
     padding: 20px;
+    background-color: #fff;
 }
 
-footer p {
+/* footer p {
     color: #fff;
-}
+} */
 
 
 /* Responsive */
 
 @media(max-width: 960px) {
+
+    section{
+        margin-top: 100px;
+        background: linear-gradient(#131f33 ,#131f33,#131f33,#131f33 ,#fff);
+
+    }
+
     header .menu-bar {
         display: none;
     }

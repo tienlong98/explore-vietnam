@@ -25,12 +25,12 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Image</th>
-                                            <th>Tour Name</th>
-                                            <th>Number of people</th>
-                                            <th>Total Price</th>
-                                            <th>Departure date</th>
-                                            <th>Status</th>
+                                            <th>{{ __('イメージ') }}</th>
+                                            <th>{{ __('ツアー') }}</th>
+                                            <th>{{ __('人数') }}</th>
+                                            <th>{{ __('価格') }}</th>
+                                            <th>{{ __('出発日') }}</th>
+                                            <th>{{ __('状態') }}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
