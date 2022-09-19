@@ -42,17 +42,14 @@
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown buton
+                                        {{ __('ドロップダウン') }}
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/listtour?sort=created_at&type=DESC">Sort by
-                                                newness</a></li>
-                                        <li><a class="dropdown-item" href="/listtour?sort=featured&type=DESC">Sort by Featured</a>
+                                        <li><a class="dropdown-item" href="/listtour?sort=created_at&type=DESC">{{ __('新しさで並べ替え') }}</a></li>
+                                        <li><a class="dropdown-item" href="/listtour?sort=featured&type=DESC">{{ __('おすすめ並べ') }}</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="/listtour?sort=regular_price&type=ASC">Sort by price: low
-                                                to high</a></li>
-                                        <li><a class="dropdown-item" href="/listtour?sort=regular_price&type=DESC">Sort by price:
-                                                high to low</a></li>
+                                        <li><a class="dropdown-item" href="/listtour?sort=regular_price&type=ASC">{{ __('価格で並べ替え: 安い順') }}</a></li>
+                                        <li><a class="dropdown-item" href="/listtour?sort=regular_price&type=DESC">{{ __('価格で並べ替え: 高い順') }}</a></li>
 
                                     </ul>
                                 </div>
@@ -133,7 +130,7 @@
                                         width="80" height="80">
                                     <div>
                                         <p>{{ $item->name }}</p>
-                                        <p>More</p>
+                                        <p>{{ __('もっと') }}</p>
                                     </div>
 
                                 </a>
