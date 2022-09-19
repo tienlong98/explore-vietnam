@@ -2,12 +2,12 @@
 @section('content')
     <div class="banner d-flex justify-content-center">
         <img src="{{ asset('assets/images/ptg13.jpg') }}" alt="">
-        <h1 class="">Adventure Trails</h1>
+        <h1 class="">{{ __('冒険旅行') }}</h1>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 title-list">
-                <h3 class="mt-5">List Adventure Trails</h3>
+                <h3 class="mt-5">{{ __('冒険旅行ツアーリスト') }}</h3>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mb-5">
                 <div class="item">

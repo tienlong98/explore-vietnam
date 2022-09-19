@@ -58,6 +58,7 @@ Route::get('transport',[travelTipsController::class, 'transport'])->name('transp
 Route::get('safety',[travelTipsController::class, 'safety'])->name('safety');
 Route::get('weather',[travelTipsController::class, 'weather'])->name('weather');
 
+Route::get('camnangdulich',[ListTourController::class, 'camnangdulich'])->name('camnangdulich');
 
 
 Route::get('listtour', [ListTourController::class, 'index'])->name('listtour');

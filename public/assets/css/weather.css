@@ -9,7 +9,7 @@
 body {
     font-family: "Huifont";
     padding: 0 12vh;
-    background-color: #ccc900;
+    background-color: #b2af0b;
 }
 
 body::after {
@@ -33,13 +33,13 @@ body::after {
     position: fixed;
     top: 100px;
     left: 1vw;
-    font-size: 30px;
+    font-size: 50px;
     margin: 0;
     padding: 0;
     color: azure;
 }
 
-.mini-menu p {}
+
 
 .fa-sharp {
     color: azure;
@@ -55,13 +55,17 @@ body::after {
 }
 
 .mini-menu .travel-icon:hover {
-    color: #ccc900;
+    color: #b2af0b;
 }
 
 .mini-menu .fa-sharp:hover {
-    color: #ccc900;
+    color: #b2af0b;
 }
 
+h1{
+    padding-right: 5vw;
+    text-align: center;
+}
 
 /* Wrap */
 
@@ -70,7 +74,8 @@ body::after {
     top: 100px;
     padding: 5vh 0 5vh 5vw;
     margin-bottom: 15vh;
-    background-color: aliceblue
+    background-color: aliceblue;
+    border-radius: 20px;
 }
 
 
@@ -82,7 +87,7 @@ display: block;
 /* banner */
 
 .wrap h1 {
-    color: #ccc900;
+    color: #b2af0b;
     font-family: 'Rouge Script', cursive;
     font-size: 50px;
     font-weight: normal;
@@ -92,10 +97,10 @@ display: block;
     text-shadow: 1px 1px 2px #082b34;
 }
 
-#banner {
+.image #banner {
     border-radius: 5px;
-    border: solid #ccc900;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    /* border: solid #b2af0b;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5); */
     width: 100%;
     height: 400px;
 }
@@ -149,6 +154,7 @@ height: 370px; */
     width: 100%;
     display: inline-block;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .card ul li:hover span {
@@ -158,14 +164,14 @@ height: 370px; */
 .card ul li::before {
     content: '';
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 45px;
     background-color: transparent;
     border-radius: 34px;
     top: 0;
     left: 0;
     transition: all 0.8s;
-    border: 2px solid #ccc900;
+    border: 2px solid #b2af0b;
     box-sizing: border-box
 }
 
@@ -174,47 +180,113 @@ height: 370px; */
     position: absolute;
     top: 15px;
     left: 15px;
-    height: 5px;
-    width: 5px;
+    height: 10px;
+    width: 10px;
     transform: rotate(45deg);
-    border-top: 2px solid #ccc900;
-    border-right: 2px solid #ccc900
+    border-top: 2px solid #b2af0b;
+    border-right: 2px solid #b2af0b
 }
 
 .card ul li:hover::before {
     width: 100%;
-    background-color: #ccc900
+    background-color: #b2af0b
 }
 
+.home-back{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
 @media(max-width: 1224px) {
-    .wrap {
-        position: relative;
-        /* top: 100px; */
-        /* padding: 5vh 0 5vh 5vw; */
-        /* margin-bottom: 15vh; */
-        width: auto;
-        height: auto;
-        background-color: aliceblue;
-        text-align: center;
-        justify-content: center;
-        padding: 0 0;
-        margin: 0 0;
+
+    .mini-menu {
+        position:fixed;
+        top: 100px;
+        left: 1vw;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        color: azure;
     }
-    #banner {
+
+    .wrap {
+        text-align: center;
+    }
+
+    h1{
+        padding-right: 5vw;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .image #banner {
         width: 60%;
+        box-shadow: none;
+        padding-right: 20px;
     }
     .card ul {
         padding-left: 0;
         width: 200px;
     }
     .card ul li span {
-        font-size: 15px;
+        font-size: 20px;
         word-wrap: break-word;
         text-align: left;
+    }
+
+    .home-back{
+        
+        font-size: 30px;
     }
 }
 
 @media(max-width: 414px) {
+
+    body{
+        padding: 0 3px;
+     }
+
+     .wrap{
+        width:100%;
+        padding-bottom: 50px;
+        padding-top: 0;
+        
+
+    }
+
+    .mini-menu {
+        top: 20px;
+        left: 117px;
+        display: flex;
+    }
+
+    .mini-menu p{
+        padding: 10px 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #banner {
+        width: 100%;
+        box-shadow: none;
+        /* object-fit: cover; */
+    }
+
+
+    .wrap h1{
+        font-size: 30px;
+    }
+
+    .card ul li span {
+        font-size: 15px;
+        word-wrap: break-word;
+        text-align: left;
+    }
+
+
     .card ul li::before {
         display: none;
     }
@@ -232,5 +304,9 @@ height: 370px; */
         width: 100%;
         font-size: 10px;
         text-align: left;
+    }
+
+    .card ul li:hover span {
+        color: #b2af0b
     }
 }

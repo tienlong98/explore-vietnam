@@ -34,18 +34,18 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                     <div class="title-tour mt-5 mb-5">
-                        <h3 class="fw-b">List Tour</h3>
+                        <h3 class="fw-b">{{ __('リストツアー') }}</h3>
                     </div>
                     <div class="sapxep mb-5">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                                 <form action="" method="post"></form>
                                 <select class="form-select css-border" aria-label="Default select example">
-                                    <option value="default" selected>Default</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="featured">Sort by Featured </option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
+                                    <option value="default" selected>{{ __('既定') }}</option>
+                                    <option value="date">{{ __('新しさで並べ替え') }}</option>
+                                    <option value="featured">{{ __('おすすめ並べ') }}</option>
+                                    <option value="price">{{ __('価格で並べ替え: 安い順') }}</option>
+                                    <option value="price-desc">{{ __('価格で並べ替え: 高い順') }}</option>
                                 </select>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                     </div>
                     <div class="best-tour-ex mb-5">
                         <div class="title-best-tour">
-                            <p class="fs-4 fw-b">All Categories</p>
+                            <p class="fs-4 fw-b">{{ __('すべてのカテゴリ') }}</p>
                         </div>
                         @foreach ($categories as $item)
                             <div class="css-dmh fix-bd-1 mb-3">
@@ -122,7 +122,7 @@
                                         width="80" height="80">
                                     <div>
                                         <p>{{ $item->name }}</p>
-                                        <p>More</p>
+                                        <p>{{ __('もっと') }}</p>
                                     </div>
 
                                 </a>
@@ -131,7 +131,7 @@
                     </div>
                     <div class="best-tour-ex mb-5">
                         <div class="title-best-tour">
-                            <p class="fs-4 fw-b">Featured Tour</p>
+                            <p class="fs-4 fw-b">{{ __('注目のツアー') }}</p>
                         </div>
                         @foreach ($featured_tour as $item)
                             <div class="item-best-tour d-flex">
@@ -154,7 +154,7 @@
                     </div>
                     <div class="best-tour-ex mb-5">
                         <div class="title-best-tour">
-                            <p class="fs-4 fw-b">Trending Tour</p>
+                            <p class="fs-4 fw-b">{{ __('トレンドのツアー') }}</p>
                         </div>
                         @foreach ($trending_tour as $item)
                             <div class="item-best-tour d-flex">

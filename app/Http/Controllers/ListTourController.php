@@ -58,4 +58,8 @@ class ListTourController extends Controller
         $trending_tour = Tour::where('trending', 1)->limit(4)->get();
         return view('search', compact('tour', 'categories', 'featured_tour', 'trending_tour'));
     }
+
+    // public function camnangdulich(){
+    //     return view('camnangdulich');
+    // }
 }

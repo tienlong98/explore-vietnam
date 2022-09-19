@@ -34,17 +34,47 @@
             visibility: visible !important;
         }
 
+        #progress {
+             position: fixed;
+            background: #03cc65;
+            bottom: 20px;
+            right: 10px;
+            height: 70px;
+            width: 70px;
+            display: none;
+            place-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+    }
+    
+        #progress-value {
+            display: block;
+            height: calc(100% - 20px);
+            width: calc(100% - 20px);
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            color: #001a2e;
+        }
+
 
     </style>
 </head>
 
 <body>
+    <div id="progress">
+        <span id="progress-value">&#10224;</span>
+    </div>
+
     <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid d-flex justify-content-around">
                 <div class="logo">
                     <ion-icon name="heart-outline" class="icon-1"></ion-icon>
-                    <a class="text-logo" href="#">{{ __('ベトナム') }}</a>
+                    <a class="text-logo" href="#">VietNam</a>
                     <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                 </div>
 
@@ -210,6 +240,34 @@
     </script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        let calcScrollValue = () =>{
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            // console.log(pos);
+            let calcHeight =
+                document.documentElement.scrollHeight -
+                 document.documentElement.clientHeight;
+           
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+            console.log(scrollValue)
+            if(pos > 100){
+                scrollProgress.style.display = "grid";
+            }else{
+                scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0; 
+            });
+
+            scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`
+        };
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
     @if (session('status'))
         <script>
             swal({
