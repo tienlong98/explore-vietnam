@@ -18,7 +18,7 @@ class CartController extends Controller
 
         if (Auth::id()) {
 
-            $user = User::find($id);
+            $user = Auth::user();
             $tour = Tour::find($id);
             $cart = new Cart();
             $cart->user_id = $user->id;
