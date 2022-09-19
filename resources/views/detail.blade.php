@@ -81,7 +81,7 @@
                                             <select class="form-select" name="hotel_id">
                                                 <option value="" selected>Default Hotel</option>
                                                 @foreach ($hotels as $item)
-                                                    <option value="{{ $item->price }}">
+                                                    <option value="{{ $item->price }}" >
                                                         <div class="item-hotel">
                                                             <img width="50"
                                                                 src="{{ asset('assets/uploads/hotels/' . $item->image) }}"

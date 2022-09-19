@@ -61,6 +61,8 @@ Route::get('weather',[travelTipsController::class, 'weather'])->name('weather');
 
 
 Route::get('listtour', [ListTourController::class, 'index'])->name('listtour');
+Route::post('change-option', [ListTourController::class, 'index']);
+
 Route::get('user-category/{slug}', [UserCategoryController::class, 'index']);
 Route::get('listtour/{slug}', [ListTourController::class, 'detailtour'])->name('tour.detail');
 Route::get('search', [ListTourController::class, 'search']);

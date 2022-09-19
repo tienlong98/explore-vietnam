@@ -15,9 +15,9 @@ class ListTourController extends Controller
     // public $sorting;
     // public $pagesize;
 
-    public function index()
+    public function index(Request $request)
     {
-        $tours = Tour::paginate(9);
+        $tours = Tour::orderBy($request->get('sort', 'id'), $request->get('type', 'desc'))->paginate(9);
         $categories = Category::all();
         $featured_tour = Tour::where('featured', 1)->limit(4)->get();
         $trending_tour = Tour::where('trending', 1)->limit(4)->get();

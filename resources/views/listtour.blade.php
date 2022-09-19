@@ -39,14 +39,23 @@
                     <div class="sapxep mb-5">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                                <form action="" method="post"></form>
-                                <select class="form-select css-border" aria-label="Default select example">
-                                    <option value="default" selected>Default</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="featured">Sort by Featured </option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
-                                </select>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown buton
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/listtour?sort=created_at&type=DESC">Sort by
+                                                newness</a></li>
+                                        <li><a class="dropdown-item" href="/listtour?sort=featured&type=DESC">Sort by Featured</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/listtour?sort=regular_price&type=ASC">Sort by price: low
+                                                to high</a></li>
+                                        <li><a class="dropdown-item" href="/listtour?sort=regular_price&type=DESC">Sort by price:
+                                                high to low</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
@@ -82,8 +91,10 @@
                                             @if ($tour->sale_price == 0)
                                                 <p class="fs-5 fw-b">{{ number_format($tour->regular_price) }}$</p>
                                             @else
-                                                <p class="fs-5 fw-b">{{ number_format($tour->sale_price) }}$
-                                                    <sup>SALE</sup></p>
+                                                <p class="fs-5 fw-b">
+                                                    <span>{{ number_format($tour->regular_price) }}-></span>{{ number_format($tour->sale_price) }}$
+                                                    <sup>SALE</sup>
+                                                </p>
                                             @endif
                                         </div>
                                     </div>
