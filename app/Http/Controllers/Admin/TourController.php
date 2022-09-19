@@ -44,7 +44,21 @@ class TourController extends Controller
         $tour->save();
         return redirect('/tours')->with('status', "Successfully");
     }
-
+    public function uploadimage(Request $request)
+    {
+        if ($request->hasFile('upload')) {
+            $file = $request->file('upload');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $ext;
+            $file->move('assets/uploads/tours/', $filename);
+            $url = asset('assets/uploads/tours/' . $filename);
+            return response()->json([
+                'filename' => $filename,
+                'uploaded' => 1,
+                'url' => $url,
+            ]);
+        }
+    }
 
     public function edit($id)
     {

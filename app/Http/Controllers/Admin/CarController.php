@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Car;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -16,7 +17,9 @@ class CarController extends Controller
     }
     public function add()
     {
-        return view('admin.car.add');
+        $category = Category::all();
+
+        return view('admin.car.add', compact('category'));
     }
     public function insert(Request $request)
     {
@@ -28,6 +31,7 @@ class CarController extends Controller
             $file->move('assets/uploads/cars/', $filename);
             $car->image = $filename;
         }
+        $car->cate_id = $request->input('cate_id');
         $car->name = $request->input('name');
         $car->price = $request->input('price');
         $car->save();

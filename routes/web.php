@@ -54,9 +54,9 @@ Route::get('about', [aboutController::class, 'about'])->name('about');
 // contact
 Route::get('contact', [contactController::class, 'contact'])->name('form');
 // list travel tips
-Route::get('transport',[travelTipsController::class, 'transport'])->name('transport');
-Route::get('safety',[travelTipsController::class, 'safety'])->name('safety');
-Route::get('weather',[travelTipsController::class, 'weather'])->name('weather');
+Route::get('transport', [travelTipsController::class, 'transport'])->name('transport');
+Route::get('safety', [travelTipsController::class, 'safety'])->name('safety');
+Route::get('weather', [travelTipsController::class, 'weather'])->name('weather');
 
 
 
@@ -88,6 +88,8 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('tours', [TourController::class, 'index'])->name('tours');
     Route::get('add-tour', [TourController::class, 'add'])->name('add-tour');
     Route::post('insert-tour', [TourController::class, 'insert'])->name('insert-tour');
+    Route::post('upload-image', [TourController::class, 'uploadimage'])->name('ckeditor.upload');
+
     Route::get('edit-tour/{id}', [TourController::class, 'edit'])->name('edit-tour');
     Route::put('update-tour/{id}', [TourController::class, 'update'])->name('update-tour');
     Route::get('delete-tour/{id}', [TourController::class, 'destroy'])->name('delete-tour');

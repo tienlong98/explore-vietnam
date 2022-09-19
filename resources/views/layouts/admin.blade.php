@@ -21,8 +21,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
-    <script src="https://cdn.tiny.cloud/1/b6in473wpqfvbfsckinbh6rh37l0ewcm6x2wtmu3eqnea4lw/tinymce/6/tinymce.min.js"
-        referrerpolicy="origin"></script>
+
 
 </head>
 
@@ -50,6 +49,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ asset('admin/js/sb-admin-2.min.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
     @if (session('status'))
         <script>
             swal({
@@ -61,14 +61,15 @@
     @endif
     @yield('scripts')
     <script>
-        tinymce.init({
-            selector: 'textarea#editor',
-            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
-            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
-            toolbar_mode: 'floating',
-            tinycomments_mode: 'embedded',
-            tinycomments_author: 'Author name',
-        });
+        ClassicEditor
+            .create(document.querySelector('#editor'),{
+                ckfinder:{
+                    uploadUrl:'{{route ('ckeditor.upload').'?_token='.csrf_token()}}'
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 

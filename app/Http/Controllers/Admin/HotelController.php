@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Hotel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -16,7 +17,8 @@ class HotelController extends Controller
     }
     public function add()
     {
-        return view('admin.hotel.add');
+        $category = Category::all();
+        return view('admin.hotel.add', compact('category'));
     }
     public function insert(Request $request)
     {
@@ -28,6 +30,7 @@ class HotelController extends Controller
             $file->move('assets/uploads/hotels/', $filename);
             $hotel->image = $filename;
         }
+        $hotel->cate_id = $request->input('cate_id');
         $hotel->name = $request->input('name');
         $hotel->price = $request->input('price');
         $hotel->save();

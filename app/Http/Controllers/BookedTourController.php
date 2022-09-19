@@ -23,7 +23,7 @@ class BookedTourController extends Controller
             $bookeditem->image = $request->input('image');
             $bookeditem->hotel = $request->input('hotel_id');
             $bookeditem->car = $request->input('car_id');
-            $bookeditem->total = $request->input('total') + $bookeditem->car + $bookeditem->hotelF;
+            $bookeditem->total = $request->input('total');
             $bookeditem->save();
             return redirect('booked')->with('status', "Booked !!!");
         } else {

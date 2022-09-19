@@ -6,6 +6,7 @@ use App\Models\Car;
 use App\Models\Cart;
 use App\Models\Hotel;
 use App\Models\Tour;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -17,7 +18,7 @@ class CartController extends Controller
 
         if (Auth::id()) {
 
-            $user = Auth::user();
+            $user = User::find($id);
             $tour = Tour::find($id);
             $cart = new Cart();
             $cart->user_id = $user->id;

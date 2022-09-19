@@ -32,8 +32,8 @@ class ListTourController extends Controller
             $trending_tour = Tour::where('trending', 1)->limit(4)->get();
             $rate = Rating::where('tour_id', $tour->id)->orderBy('created_at', 'DESC')->get();
             $rateAvg = Rating::where('tour_id', $tour->id)->avg('rating_star');
-            $hotels = Hotel::all();
-            $cars = Car::all();
+            $hotels = Hotel::where('cate_id', $tour->cate_id)->get();
+            $cars = Car::where('cate_id', $tour->cate_id)->get();
             return view('detail', compact('tour', 'rate', 'rateAvg', 'categories', 'featured_tour', 'trending_tour', 'hotels', 'cars'));
         } else {
             return redirect('/')->with('status', 'Slug do not exists');

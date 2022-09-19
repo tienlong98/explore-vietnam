@@ -24,6 +24,10 @@
             background-color: #000000;
             color: white;
         }
+
+        figure img {
+            width: 50%;
+        }
     </style>
     <div class="title-detail text-center">
         <h1>{{ $tour->name }}</h1>
@@ -81,14 +85,15 @@
                                             <select class="form-select" name="hotel_id">
                                                 <option value="" selected>Default Hotel</option>
                                                 @foreach ($hotels as $item)
-                                                    <option value="{{ $item->price }}" >
-                                                        <div class="item-hotel">
-                                                            <img width="50"
+                                                    <option value="{{ $item->price }}">
+                                                        <div class="item-hotel"
+                                                            style="background-image: url("{{ asset('assets/uploads/hotels/' . $item->image) }}")">
+                                                            {{-- <img width="50"
                                                                 src="{{ asset('assets/uploads/hotels/' . $item->image) }}"
-                                                                alt="">
+                                                                alt=""> --}}
                                                             <div class="hotel-content">
                                                                 <p>{{ $item->name }}</p>
-                                                                <p>{{ number_format($item->price) }}</p>
+                                                                <p>({{ number_format($item->price) }}$)</p>
                                                             </div>
                                                         </div>
                                                     </option>

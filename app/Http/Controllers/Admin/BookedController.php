@@ -29,6 +29,6 @@ class BookedController extends Controller
         $booked->status = $request->input('status');
         $booked->update();
         Mail::to($user->email)->send(new PaymentConfirm($booked, $user));
-        return redirect('booked')->with('status', "Successfully");
+        return redirect('admin-booked')->with('status', "Successfully");
     }
 }
