@@ -24,6 +24,32 @@
             height: auto;
             margin-right: 10px;
         }
+
+        #progress {
+        position: fixed;
+        background: #03cc65;
+        bottom: 20px;
+        right: 10px;
+        height: 70px;
+        width: 70px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+}
+ 
+    #progress-value {
+        display: block;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: #001a2e;
+    }
     </style>
     @yield('css')
 
@@ -37,7 +63,7 @@
                 <div class="container-fluid d-flex justify-content-around">
                     <div class="logo">
                         <ion-icon name="heart-outline" class="icon-1"></ion-icon>
-                        <a class="text-logo" href="#">{{ __('ベトナム') }}</a>
+                        <a class="text-logo" href="#">VietNam</a>
                         <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                     </div>
 
@@ -94,13 +120,13 @@
                             @guest
                                 @if (Route::has('login'))
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
                                     </li>
                                 @endif
 
                                 @if (Route::has('register'))
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                        <a class="nav-link" href="{{ route('register') }}">{{ __('新規') }}</a>
                                     </li>
                                 @endif
                             @else

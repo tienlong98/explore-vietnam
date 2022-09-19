@@ -18,46 +18,46 @@
     <main class="container">
     <div class="company-address">
         <p class="address">NAL JAPAN</p>
-        <p> 〒105-0004 東京都港区新橋６丁目２０−４ 新橋パインビル 4階</p>
+        <p> {{ __('〒105-0004 東京都港区新橋６丁目２０−４ 新橋パインビル 4階') }}</p>
     </div>
     
     <div class="form-contact">
         <form action="https://formsubmit.co/5e86d64465a301d7dd2b7ea161b0999c" method="POST">
             <hr>
-            <p class="mt-3">＊お客様情報＊</p>
+            <p class="mt-3">{{ __('＊お客様情報＊') }}</p>
 
                 <div class="mb-3 write">
-                    <label for="">氏名 *</label>
+                    <label for="">{{ __('氏名 *') }}</label>
                     <input type="text" id="exampleInputPhone" required>
                 </div>
                 <div class="mb-3 write">
-                    <label for="">ふりがな *</label>
-                    <input type="text" id="exampleInputPhone" required>
+                    <label for="">{{ __('ふりがな') }}</label>
+                    <input type="text" id="exampleInputPhone">
                 </div>
                 
                 <div class="mb-3 write">
-                    <label for="exampleInputEmail1">メールアドレス*:</label>
+                    <label for="exampleInputEmail1">{{ __('メールアドレス*:') }}</label>
                     <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="test@gmai.com" required>
                 </div>
                 <div class="mb-3 write">
-                    <label>電話番号*:</label>
+                    <label>{{ __('電話番号*:') }}</label>
                     <input type="num" id="exampleInputPhone" placeholder="03-1234-5678" required>
                 </div>
                 
                 
-                <p>＊お問わせ内容＊</p>
+                <p>{{ __('＊お問わせ内容＊') }}</p>
                 
                 <div class="mb-3 write">
-                    <label class=" message">ご記入 :</label>
+                    <label class=" message">{{ __('ご記入 :') }}</label>
                     <textarea name="message"></textarea>
                 </div>
                 <!-- <p class="mt-3">＊ご確認＊</p> -->
                 <div class="mb-3 tick-box">
                     <input type="checkbox" class="form-check-input " id="exampleCheck1" required>
-                    <label class="form-check-label" for="exampleCheck1">下記、個人情報の取扱いに同意します</label>
+                    <label class="form-check-label" for="exampleCheck1">{{ __('下記、個人情報の取扱いに同意します') }}</label>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto mb-3">
-                    <button class="btn " type="submit">送信</button>
+                    <button class="btn " type="submit">{{ __('送信') }}</button>
                 </div>
 
             </form>

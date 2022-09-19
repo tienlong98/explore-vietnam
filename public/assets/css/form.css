@@ -107,6 +107,10 @@ color: #fff;
 
 @media (max-width: 991px){
 
+  main .container{
+    margin-top: 90px;
+  }
+
   .form-contact p{
     color: red;
     font-size: large;

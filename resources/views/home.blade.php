@@ -135,12 +135,12 @@
 
                     </div>
                     <div class="image">
-                        <img class="myimg" src="{{ asset('assets/images/kp6.jpg') }}" />
+                        <img class="myimg" src="{{ asset('assets/new-images/chuch.png') }}" />
                         <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
 
                     </div>
                     <div class="image">
-                        <img class="myimg" src="{{ asset('assets/images/kp7.png') }}" />
+                        <img class="myimg" src="{{ asset('assets/new-images/mcc3.png') }}" />
                         <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
 
                     </div>
@@ -176,6 +176,11 @@
                     </div>
                     <div class="image">
                         <img class="myimg" src="{{ asset('assets/images/kp14.png') }}" />
+                        <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+
+                    </div>
+                    <div class="image">
+                        <img class="myimg" src="{{ asset('assets/new-images/IMG_0700.png') }}" />
                         <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
 
                     </div>

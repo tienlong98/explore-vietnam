@@ -51,7 +51,7 @@
                             <form method="POST" action="{{ url('addcart/' . $tour->id) }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="date" class=" col-form-label">Select departure date:</label>
+                                    <label for="date" class=" col-form-label">{{ __('出発日を選択') }}:</label>
                                     <div>
                                         <div class="input-group date">
                                             <input type="date" class="form-control " value="" name="dd_date"
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="sln mt-4">
                                     <div class="form-group d-flex justify-content-between">
-                                        <label class="col-form-label">Number of people:</label>
+                                        <label class="col-form-label">{{ __('人数') }}:</label>
                                         <div>
                                             <div class='ctrl'>
                                                 <div class='ctrl__button ctrl__button--decrement'>-</div>
@@ -77,9 +77,9 @@
                                     </div>
                                     <div class="form-group mt-3">
                                         <div class="hotel">
-                                            <label for="">Hotel:</label>
+                                            <label for="">{{ __('ホテル') }}:</label>
                                             <select class="form-select" name="hotel_id">
-                                                <option value="" selected>Default Hotel</option>
+                                                <option value="" selected>{{ __('デフォルト ホテル') }}</option>
                                                 @foreach ($hotels as $item)
                                                     <option value="{{ $item->price }}" >
                                                         <div class="item-hotel">
@@ -99,9 +99,9 @@
                                     </div>
                                     <div class="form-group mt-3">
                                         <div class="car">
-                                            <label for="">Car:</label>
+                                            <label for="">{{ __('車') }}:</label>
                                             <select class="form-select" name="car_id">
-                                                <option value="" selected>No Car</option>
+                                                <option value="" selected>{{ __('ない') }}</option>
                                                 @foreach ($cars as $item)
                                                     <option value="{{ $item->price }}">
                                                         <div class="hotel-content">
@@ -115,11 +115,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group d-flex justify-content-between mt-3">
-                                        <label class="col-form-label">Tour Price:</label>
+                                        <label class="col-form-label">{{ __('価格') }}:</label>
                                         <div>
 
                                             <p class="fs-3 fw-b">{{ number_format($tour->regular_price) }}$ <span
-                                                    class="fs-5">(one people)</span></p>
+                                                    class="fs-5">({{ __('一人分') }})</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -140,12 +140,12 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                                aria-selected="true">Desciption</button>
+                                aria-selected="true">{{ __('説明') }}</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                aria-controls="profile-tab-pane" aria-selected="false">Review</button>
+                                aria-controls="profile-tab-pane" aria-selected="false">{{ __('レビュー') }}</button>
                         </li>
 
 
@@ -229,7 +229,7 @@
                 </div>
                 <div class="best-tour-ex mb-5">
                     <div class="title-best-tour">
-                        <p class="fs-4 fw-b">All Categories</p>
+                        <p class="fs-4 fw-b">{{ __('すべてのカテゴリ') }}</p>
                     </div>
                     @foreach ($categories as $item)
                         <div class="css-dmh fix-bd-1 mb-3">
@@ -239,7 +239,7 @@
                                     width="80" height="80">
                                 <div>
                                     <p>{{ $item->name }}</p>
-                                    <p>More</p>
+                                    <p>{{ __('もっと') }}</p>
                                 </div>
 
                             </a>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="best-tour-ex mb-5">
                     <div class="title-best-tour">
-                        <p class="fs-4 fw-b">Featured Tour</p>
+                        <p class="fs-4 fw-b">{{ __('注目のツアー') }}</p>
                     </div>
                     @foreach ($featured_tour as $item)
                         <div class="item-best-tour d-flex">
@@ -261,7 +261,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p class="fs-5">{{ number_format($item->regular_price) }}$</p>
-                                    <a href="">Book Now</a>
+                                    <a href="">{{ __('予約') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +271,7 @@
                 </div>
                 <div class="best-tour-ex mb-5">
                     <div class="title-best-tour">
-                        <p class="fs-4 fw-b">Trending Tour</p>
+                        <p class="fs-4 fw-b">{{ __('トレンドのツアー') }}</p>
                     </div>
                     @foreach ($trending_tour as $item)
                         <div class="item-best-tour d-flex">
