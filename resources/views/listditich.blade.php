@@ -2,12 +2,12 @@
 @section('content')
 <div class="banner d-flex justify-content-center">
     <img src="{{asset('assets/images/ptg13.jpg')}}" alt="">
-    <h1 class="">Best Heritage Sites</h1>
+    <h1 class="">{{ __('人気遺産') }}</h1>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-lg-12 title-list">
-            <h3 class="mt-5">List Best Heritage Sites</h3>
+            <h3 class="mt-5">{{ __('人気遺産ツアーリスト') }}</h3>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mb-5">
             <div class="item">
