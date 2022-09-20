@@ -20,8 +20,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-1-left">
-                    <img src="{{ asset('assets/images/kp8.jpg') }}" width="50%" alt="" />
-                    <img src="{{ asset('assets/images/kp14.png') }}" class="fix-vitri1" width="30%" alt="" />
+                    <img src="{{ asset('assets/new-images/camau1.jpg') }}" width="50%" alt="" />
+                    <img src="{{ asset('assets/images/kp13.jpg') }}" class="fix-vitri1" width="40%" alt="" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-1-right">
                     <h1>{{ __('カマウ水上マーケット') }}</h1>
@@ -60,8 +60,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-3-right">
-                    <img src="{{ asset('assets/images/kp3.jpg') }}" width="50%" alt="" />
-                    <img src="{{ asset('assets/images/kp4.jpg') }}" class="fix-vitri2" width="50%" alt="" />
+                    <img src="{{ asset('assets/new-images/camau8.jpg') }}" width="50%" alt="" />
+                    <img src="{{ asset('assets/new-images/camau5.jpg') }}" class="fix-vitri2" width="50%" alt="" />
                 </div>
             </div>
         </div>
@@ -72,34 +72,34 @@
         </div>
         <div class="photo">
             <div class="image">
-                <a href="{{ asset('assets/images/kp1.jpg') }}" data-toggle="lightbox" data-title="Bai Sao">
-                    <img class="img-fluid myimg" src="{{ asset('assets/images/kp1.jpg') }}" alt="" />
+                <a href="{{ asset('assets/new-images/camau6.jpg') }}" data-toggle="lightbox" data-title="Bai Sao">
+                    <img class="img-fluid myimg" src="{{ asset('assets/new-images/camau6.jpg') }}" alt="" />
                 </a>
             </div>
             <div class="image">
-                <a href="{{ asset('assets/images/bg-home2.jpg') }}" data-toggle="lightbox" data-title="Bai Sao"><img
-                        class="myimg" src="{{ asset('assets/images/bg-home2.jpg') }}" alt="" /></a>
+                <a href="{{ asset('assets/new-images/camau1.jpg') }}" data-toggle="lightbox" data-title="Bai Sao"><img
+                        class="myimg" src="{{ asset('assets/new-images/camau1.jpg') }}" alt="" /></a>
             </div>
             <div class="image">
                 <img class="myimg" src="{{ asset('assets/images/kp14.png') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp15.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/images/kp9.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp4.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/camau6.jpg') }}" alt="" />
             </div>
             <div class="image">
                 <img class="myimg" src="{{ asset('assets/images/kp12.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp5.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/camau7.jpg') }}" alt="" />
             </div>
             <div class="image">
                 <img class="myimg" src="{{ asset('assets/images/kp13.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp9.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/images/bg-home2.jpg') }}" alt="" />
             </div>
         </div>
     </div>

@@ -45,7 +45,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-12 mt-5 mb-3">
                         <div class="item-hotels">
                             <a href="/listumi">
-                                <img src="{{ asset('assets/images/ptg4.jpg') }}" />
+                                <img src="{{ asset('assets/images/kp5.jpg') }}" />
                                 <div class="item-content-ks d-flex justify-content-center align-items-center">
                                     <p>{{ __('海岸と島々') }}</p>
                                 </div>
@@ -116,7 +116,7 @@
                 <div class="sokai-content">
                     <div class="image">
                         <a href="https://www.instagram.com/">
-                            <img class="myimg" src="{{ asset('assets/images/kp1.jpg') }}" />
+                            <img class="myimg" src="{{ asset('assets/new-images/Hanoi1.png') }}" />
                             <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
                         </a>
                     </div>
@@ -130,7 +130,7 @@
 
                     </div>
                     <div class="image">
-                        <img class="myimg" src="{{ asset('assets/images/kp5.jpg') }}" />
+                        <img class="myimg" src="{{ asset('assets/new-images/Dao1.png') }}" />
                         <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
 
                     </div>

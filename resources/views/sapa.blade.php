@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
                 <div class="d-flex justify-content-center align-items-center ">
-                    <img src="{{ asset('assets/images/ptg8.jpg') }}" width="60%" alt="">
+                    <img src="{{ asset('assets/new-images/sapa1.jpg') }}" width="60%" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
@@ -37,7 +37,7 @@
             <div class="col-lg-12 ">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center">
-                        <img src="{{ asset('assets/images/bg.jpg') }}" width="90%" alt="">
+                        <img src="{{ asset('assets/new-images/sapa5.jpg') }}" width="90%" alt="">
                     </div>
                 </div>
             </div>
@@ -58,10 +58,10 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
-                <img src="{{ asset('assets/images/ptg.jpg') }}" width="90%" class="mt-5" alt="">
+                <img src="{{ asset('assets/new-images/sapa1.webp') }}" width="90%" class="mt-5" alt="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 d-flex justify-content-center">
-                <img src="{{ asset('assets/images/ptg10.jpg') }}" width="80%" class="mt-5" alt="">
+                <img src="{{ asset('assets/new-images/thac-bac-sapa-3.jpg') }}" width="80%" class="mt-5" alt="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5 position-relative">
                 <div>
@@ -73,7 +73,7 @@
                         <b>{{ __('*愛の滝*') }}</b><br>
                         {{ __('愛の滝は白銀の滝に比べてやや標高が低い (約 100m) だけですが、さまざまなアドベンチャー ツーリズムで多くの観光客を魅了しています。 「専門家」は、ロープスイングスケジュールで持久力に挑戦するためにここに来ることがよくあります。高所恐怖症や体力が弱い人には禁忌です。') }}
                             <br> {{ __('遠くから見ると、愛の滝は雄大な山々に囲まれた巨大な帽子のように見えます. 滝は、O Quy Ho パス (3 km) と町の中心部 (4 km) の間に位置しているため、日中に多くのサパの観光スポットを探索したい方に最適です。 滝のふもとで時間を過ごして、黄金の流れが太陽の下で輝くのを見て、ここの豊かな動植物を鑑賞することを忘れないでください.') }}<br>
-                        <b>{{ __('*ブラシのコピー*') }}</b><br>
+                        <b>*Ban Lao Chai*</b><br>
                         {{ __('サパの町の中心部から南東へ約8km進むと、少数民族の黒人モン族の居住地であるラオチャイ村に到着します。 山と森の間に位置し、曲がりくねった川に面した丘の中腹に不安定に横たわる瓦屋根の木造家屋の群れ - Ban Lao Chai は、絵画から出てきた素朴な村の写真のようなものです。') }}<br>
                     </p>
 

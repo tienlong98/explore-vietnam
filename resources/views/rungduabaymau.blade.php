@@ -20,8 +20,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-1-left">
-                    <img src="{{ asset('assets/images/kp8.jpg') }}" width="50%" alt="" />
-                    <img src="{{ asset('assets/images/kp14.png') }}" class="fix-vitri1" width="30%" alt="" />
+                    <img src="{{ asset('assets/new-images/rungdua10.jpg') }}" width="50%" alt="" />
+                    <img src="{{ asset('assets/new-images/rungdua2.jpg') }}" class="fix-vitri1" width="30%" alt="" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-1-right">
                     <h1>{{ __('ラング ドゥア ベイ マウ') }}</h1>
@@ -59,7 +59,7 @@
                    <p class="mt-3">
                       <b>{{ __('*バスケット ボートでの観光*') }}</b><br>
                       {{ __('緑のココナッツの木立をバスケット ボートに座って新鮮な空気を楽しむことは、多くの人々に愛されているユニークな体験です。 ベイ マウ ココナッツ フォレストの観光エリアには、2 種類のバスケット ボートがあり、小型タイプは 2 人乗り、大型タイプは 4 人乗りです。 散歩や観光の旅の途中で、椰子の森や遠く離れたクアン族の民謡のメロディーにまつわる興味深い話を聞くことができます。') }}<br>
-                       <b>{{ __('*かご踊りや競艇観戦*') }}</b><br>
+                       <!-- <b>{{ __('*かご踊りや競艇観戦*') }}</b><br>
                        {{ __('ウォーキングや観光のほか、かごや競艇などの迫力あるパフォーマンスも楽しめます。 確かに、「アーティスト」がボビングバスケットボートで滑らかで非常に速く印象的な動きでバランスを取る能力に驚かれることでしょう。 続いてはボートレースのパフォーマンスもスリリングで、ライダーのやる気を引き出す歓声と歓声も忘れないでください。') }}<br>
                        <b>{{ __('*網を投げて魚を捕る*') }} </b><br>
                        {{ __('網を投げて魚を捕るというのは、ホイアンの椰子の森に来たら多くの人が期待する活気あるパフォーマンスです。') }}<br>
@@ -69,7 +69,7 @@
                        <b>{{ __('*Cam Thanh 村へのサイクリング*') }} </b><br>
                        {{ __('緑のココナッツの森を眺めた後、自転車をレンタルして Cam Thanh 村を散策します。 広大な田んぼの美しいのどかな空間に浸り、熟した米の香りとともに田舎の空気を胸いっぱいに吸い込む旅。') }}<br>
                        <b>{{ __('*地元の人々の家でホイアンの特産品を楽しむ*') }} </b><br>
-                       {{ __('ホイアンのココナッツの森を発見する旅では、この村で素朴な生活の最も本物の体験をするために地元の人々の招待を躊躇しないでください. これ. 春巻き、甘酸っぱいエビのサラダ、バナナの花のサラダ、セントラル パンケーキなどのおいしい料理をお楽しみいただけます。また、ベイ マウ ココナッツ フォレスト レストランでもこれらのおいしい料理をお楽しみいただけます。') }}
+                       {{ __('ホイアンのココナッツの森を発見する旅では、この村で素朴な生活の最も本物の体験をするために地元の人々の招待を躊躇しないでください. これ. 春巻き、甘酸っぱいエビのサラダ、バナナの花のサラダ、セントラル パンケーキなどのおいしい料理をお楽しみいただけます。また、ベイ マウ ココナッツ フォレスト レストランでもこれらのおいしい料理をお楽しみいただけます。') }} -->
 
                         </p>
                         <div class="d-flex justify-content-center mt-5">
@@ -79,8 +79,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-3-right">
-                    <img src="{{ asset('assets/images/kp3.jpg') }}" width="50%" alt="" />
-                    <img src="{{ asset('assets/images/kp4.jpg') }}" class="fix-vitri2" width="50%" alt="" />
+                    <img src="{{ asset('assets/new-images/rungdua5.jpg') }}" width="50%" alt="" />
+                    <img src="{{ asset('assets/new-images/rungdua11.jpg') }}" class="fix-vitri2" width="50%" alt="" />
                         
                 </div>
             </div>
@@ -92,8 +92,8 @@
         </div>
         <div class="photo">
             <div class="image">
-                <a href="{{ asset('assets/images/kp1.jpg') }}" data-toggle="lightbox" data-title="Bai Sao">
-                    <img class="img-fluid myimg" src="{{ asset('assets/images/kp1.jpg') }}" alt="" />
+                <a href="{{ asset('assets/new-images/rung-dua.jpg') }}" data-toggle="lightbox" data-title="Bai Sao">
+                    <img class="img-fluid myimg" src="{{ asset('assets/new-images/rung-dua.jpg') }}" alt="" />
                 </a>
             </div>
             <div class="image">
@@ -101,22 +101,22 @@
                         class="myimg" src="{{ asset('assets/images/bg-home2.jpg') }}" alt="" /></a>
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp14.png') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/rungdua4.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp15.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/rungdua3.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp4.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/rungdua7.jpg') }}" alt="" />
             </div>
             <div class="image">
                 <img class="myimg" src="{{ asset('assets/images/kp12.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp5.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/rungdua9.jpg') }}" alt="" />
             </div>
             <div class="image">
-                <img class="myimg" src="{{ asset('assets/images/kp13.jpg') }}" alt="" />
+                <img class="myimg" src="{{ asset('assets/new-images/rungdua4-1.png') }}" alt="" />
             </div>
             <div class="image">
                 <img class="myimg" src="{{ asset('assets/images/kp9.jpg') }}" alt="" />
