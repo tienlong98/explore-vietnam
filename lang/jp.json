@@ -1,12 +1,13 @@
 {
     "explore":"探検s",
     "Viet Nam":"ベトナム",
-
+    "Book Tour":"予約",
+    "Travel by personality.":"個性で勝負の旅。",
     "Home": "ホーム",
    "Tours": "ツアー",
    "Hotels":"ホテル",
-   "About": "よこそ",
-   "Contact": "コンタクト",
+   "About": "チーム概要",
+   "Contact": "お問い合わせ",
    "Places to go":"行き場",
    "Adventure Trails":"冒険旅行",
    "Best Heritage Sites":"人気遺産",
@@ -32,10 +33,10 @@
     "Tag your best #ExploreVietnam moments on Instagram":"インスタグラム で最高の #探検ーベトナム の瞬間をタグ付けしてください",
 
 
- 
+
    "PRIVACY POLICY": "プライバシーポリシー",
    "TEAM & CONDITIONS": "チームと条件",
- 
+
    "PAYMENT INFO": "支払い",
    "RETURN | EXCHANGES": "戻る |取引所",
    "WEEKLY NEWSLETTER": "週刊ニュースレター",
@@ -67,7 +68,7 @@
     "The best time to travel":"旅行に最適な時期",
     "early morning trading activityBeautiful scenery, various goods People are kind, honest and naive":"早朝からの取引活動美しい景色、多彩なグッズ人々は親切で正直で素朴",
     "Visitors can come here at any time of the year because buyers and sellers are always bustling in any market. Agricultural products and fruits are colorful even though they change with the seasons, making it an attractive place.":"訪問者は一年中いつでもここに来ることができ、 どの市場でも、買い手と売り手は常に賑わっている。 農産物や果物は、季節ごとに移り変わりながらも色鮮やかで、魅了的なところである。",
-   
+
 
     "Fansipan Mountain":"ファンシーパン",
     "Where is Fansipan Mountain?":"ファンシーパン山はどこ？",
@@ -76,8 +77,8 @@
     "The best time to climb Fansipan is in October or November, when the rainy season has just ended and winter has not yet arrived. It is also February and March, when spring has come and the rainy season has not yet arrived. At the end of March, if you're lucky, you might have a chance to see a rhododendron forest blooming in the picturesque sky. If possible, you should check the weather forecast a day or two before climbing.":"ファンシーパンの登る最適な時期は10、11月に雨季が止んだばかり、冬もまだ来ていない時だ。また春が来ていて雨季が入って来ない時の２、３月である。３月末に登る時、ラッキーなら絵のような空に咲くシャクナゲの森に出会えるチャンスがあるかもしれない。できれば、登山の1、2の日前に、天気予報を確認するべきだ。",
     "The charm of Fansipan mountain":"ファンシーパン山の魅力",
     "Climb on the second day or take the ropeway for 6 minutes and climb for 20 to 30 minutes before arriving at Fansipan Lejan. Free to explore the bamboo garden, Bao'an Zen monastery, restaurants, malls and more.":"二日に登るかロープウェイで６分に乗ってから20分〜30分登った後、ファンシーパンレジャンに到着する。竹の庭、宝安禅僧院、レストラン、モールなどを自由に探索できる。",
-    
-    
+
+
     "Sapa":"サパ",
     "Where is SAPA ?":"サパ はどこであるの？",
     "Belonging to Lao Cai province, Sapa (or Sapa) is a highland town in the homonymous district located in northwestern Vietnam. The town of Sapa is located at an altitude of about 1,500m to 1,800m above sea level, and the majority of the inhabitants are Kinh and ethnic minorities. Although the last few years have only 'raided' social networks, Sapa has been rated by the French as a potential tourist destination since the 40s of the last century. Traces of the French elite of the past, such as power generation systems and more than 200 classic villas, are still visible, adding to the beauty of every corner of this mountain town. .":"ラオカイ省に属するサパ (またはサパ) は、ベトナム北西部に位置する同名の地区にある高地の町です。サパの町は海抜約 1,500m から 1,800m に位置し、住民の大半はキン族と少数民族である。ここ数年、ソーシャルネットワークを「襲撃」しただけですが、サパは前世紀の40年代以来、潜在的な観光地としてフランス人に評価されてきました.サパには、大使館、総督官邸、水力発電システム、200 以上の古典的なヴィラなど、過去のフランスのエリートの足跡が今も残っており、この山の町の隅々がさらに美しくなっています。 .",
@@ -161,7 +162,7 @@
 
     "List Adventure Trails":"冒険旅行ツアーリスト" ,
     "List Coast and Islands":"海岸と島々ツアーリスト" ,
-    "List Best Heritage Sites":"人気遺産ツアーリスト"  
+    "List Best Heritage Sites":"人気遺産ツアーリスト"
 
 
 }

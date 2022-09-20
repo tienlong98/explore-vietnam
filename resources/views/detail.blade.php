@@ -131,7 +131,7 @@
                                 <div class="nut">
                                     <div class="frame">
                                         {{-- <a href="" class="addToCartBtn">Book Now</a> --}}
-                                        <input class="css-button" type="submit" value="Book Tour">
+                                        <input class="css-button" type="submit" value="{{ __('予約') }}">
                                         {{-- <button type="submit" class="btn btn-primary">Book Tour</button> --}}
                                     </div>
                                 </div>
@@ -180,8 +180,8 @@
                                                     value="{{ Auth::user()->id }}">
                                             </div>
                                             <textarea name="comment" id="comment" rows="4"></textarea>
-                                            <div class="d-flex justify-content-center mt-3 mb-5"><input type="submit"
-                                                    value="Submit">
+                                            <div class="d-flex justify-content-center mt-3 mb-5"><input class="css-button"
+                                                    type="submit" value="{{ __('送信') }}">
                                             </div>
                                         </form>
                                     </div>

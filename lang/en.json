@@ -1,12 +1,13 @@
 {
     "探検":"explore",
     "ベトナム":"Viet nam",
-
+    "個性で勝負の旅。":"Travel by personality.",
     "ホーム": "Home",
+    "予約":"Book Tour",
     "ツアー": "Tours",
     "ホテル": "Hotels",
-    "よこそ": "About",
-    "コンタクト": "Contact",
+    "チーム概要": "About",
+    "お問い合わせ": "Contact",
     "行き場":"Places to go",
     "冒険旅行":"Adventure Trails",
     "人気遺産":"Best Heritage Sites",
@@ -19,7 +20,7 @@
     "私たちについて":"About Us",
     "人数":"Number of people",
     "日付":"Date",
-    "予約":"Booking",
+
 
     "完全にベトナムで暮らす":"LIVE FULLY IN VIETNAM",
     "壮観な自然。素晴らしい料理。文化の多様性。すばらしいサービス。":"Spectacular nature. Exceptional cuisine. Cultural diversity. Excellent service.",
@@ -39,8 +40,8 @@
 
     "プライバシーポリシー": "PRIVACY POLICY",
     "チームと条件": "TEAM & CONDITIONS",
-  
-  
+
+
     "支払い": "PAYMENT INFO",
     "戻る |取引所": "RETURN | EXCHANGES",
     "週刊ニュースレター": "WEEKLY NEWSLETTER",
@@ -56,7 +57,7 @@
     "ご記入 :":"Fill in :",
     "下記、個人情報の取扱いに同意します":"Consent Form for the Handling of Personal Information",
     "送信":"Send",
-    
+
     "カマウ水上マーケット": "Ca Mau Floating Market",
     "カマウ水上マーケットはどこ？": "Where is Ca Mau Floating Market?",
     "カマウ水上マーケットは、カマウ市の中心部、8 区のガンハオ橋から約 200 メートル、ガンハオ川の端に位置している。 カマウ水上マーケットは、西部の他の水上マーケットと同じくらいにぎやかである。 ここには何百ものボートがあり、大小さまざまなボートが商品でいっぱいで、ここで交換したり取引したりできる。 この市場がいつ形成されたのかは誰にもわかりませんが、長い間、この市場は特にカマウとサザンリバー地域全般の独特の文化的特徴となっている。":"Ca Mau Floating Market is located at the edge of the Gang Hao River, about 200 meters from the Gang Hao Bridge in District 8, in the heart of Ca Mau City. The Ca Mau Floating Market is as busy as any other floating market in the West. There are hundreds of boats here, large and small, full of goods that can be exchanged and traded here. No one knows when this floating market existed, but it has long been a distinctive cultural feature, especially in Ca Mau and the Southern River region in general.",
@@ -130,7 +131,7 @@
     "注目のツアー":"Featured Tour",
     "もっと":"more",
     "ドロップダウン":"Dropdown buton",
-    
+
 
     "説明":"Desciption",
     "レビュー":"Review",
@@ -163,4 +164,4 @@
     "人気遺産ツアーリスト":"List Best Heritage Sites"
 
 
-}   
+}

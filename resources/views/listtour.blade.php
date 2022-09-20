@@ -28,19 +28,19 @@
     </style>
     <div>
         <header class="d-flex justify-content-center align-items-center">
-            <h1>Travel by personality.</h1>
+            <h1>{{ __('個性で勝負の旅。') }}</h1>
         </header>
         <div class="container mb-5">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                     <div class="title-tour mt-5 mb-5">
-                        <h3 class="fw-b">{{ __('リストツアー') }}</h3>
+                        <p class="fw-b fs-3">{{ __('リストツアー') }}</p>
                     </div>
                     <div class="sapxep mb-5">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    <button class="btn dropdown-toggle border" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         {{ __('ドロップダウン') }}
                                     </button>
@@ -88,8 +88,8 @@
                                             @if ($tour->sale_price == 0)
                                                 <p class="fs-5 fw-b">{{ number_format($tour->regular_price) }}$</p>
                                             @else
-                                                <p class="fs-5 fw-b">
-                                                    <span>{{ number_format($tour->regular_price) }}-></span>{{ number_format($tour->sale_price) }}$
+                                                <p class="fs-5 fw-b ">
+                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
                                                     <sup>SALE</sup>
                                                 </p>
                                             @endif
@@ -151,8 +151,15 @@
                                         <p class="fs-5">{{ $item->name }} </p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="fs-5">{{ number_format($item->regular_price) }}$</p>
-                                        <a href="">Book Now</a>
+                                        @if ($tour->sale_price == 0)
+                                                <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
+                                            @else
+                                                <p class="fs-5 fw-b">
+                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                                    <sup>SALE</sup>
+                                                </p>
+                                            @endif
+                                        {{-- <a href="">Book Now</a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -174,8 +181,15 @@
                                         <p class="fs-5">{{ $item->name }} </p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="fs-5">{{ $item->short_descripsition }}$</p>
-                                        <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a>
+                                        @if ($tour->sale_price == 0)
+                                                <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
+                                            @else
+                                                <p class="fs-5 fw-b">
+                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                                    <sup>SALE</sup>
+                                                </p>
+                                            @endif
+                                        {{-- <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a> --}}
                                     </div>
                                 </div>
                             </div>

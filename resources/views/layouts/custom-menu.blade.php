@@ -38,7 +38,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         cursor: pointer;
 }
- 
+
     #progress-value {
         display: block;
         height: calc(100% - 20px);
@@ -88,10 +88,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/about">{{ __('よこそ') }}</a>
+                                <a class="nav-link" href="/about">{{ __('チーム概要') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact">{{ __('コンタクト') }}</a>
+                                <a class="nav-link" href="/contact">{{ __('お問い合わせ') }}</a>
                             </li>
                         </ul>
                     </div>

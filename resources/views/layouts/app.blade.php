@@ -47,7 +47,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             cursor: pointer;
     }
-    
+
         #progress-value {
             display: block;
             height: calc(100% - 20px);
@@ -99,10 +99,10 @@
                                 </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">{{ __('よこそ') }}</a>
+                            <a class="nav-link" href="/about">{{ __('チーム概要') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">{{ __('コンタクト') }}</a>
+                            <a class="nav-link" href="/contact">{{ __('お問い合わせ') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -249,7 +249,7 @@
             let calcHeight =
                 document.documentElement.scrollHeight -
                  document.documentElement.clientHeight;
-           
+
             let scrollValue = Math.round((pos * 100) / calcHeight);
             console.log(scrollValue)
             if(pos > 100){
@@ -258,7 +258,7 @@
                 scrollProgress.style.display = "none";
             }
             scrollProgress.addEventListener("click", () => {
-                document.documentElement.scrollTop = 0; 
+                document.documentElement.scrollTop = 0;
             });
 
             scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`
