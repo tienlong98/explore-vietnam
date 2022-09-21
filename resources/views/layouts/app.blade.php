@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/listtour.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/listyamamori.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/detailtour.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/custom-input-number.css') }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">

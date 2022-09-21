@@ -194,6 +194,7 @@ header .sns .mxh ion-icon {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
 }
 
 .item-bt .item-content-tour {
@@ -240,6 +241,7 @@ header .sns .mxh ion-icon {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .ks .item-hotels a {
@@ -455,6 +457,9 @@ footer .text-footer-center .ion-ft {
 }
 
 @media screen and (max-width: 576px) {
+  img {
+    width: 80%;
+  }
   .sokai-content {
     -webkit-column-count: 1 !important;
             column-count: 1 !important;
@@ -466,6 +471,12 @@ footer .text-footer-center .ion-ft {
   footer .logo-footer::after {
     left: 30vw;
     width: 25vw;
+  }
+  .sokaibasho .sokai-content .image {
+    text-align: center;
+  }
+  .sokaibasho .sokai-content .image img {
+    width: 75%;
   }
 }
 

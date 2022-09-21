@@ -256,21 +256,28 @@
                         <p class="fs-4 fw-b">{{ __('注目のツアー') }}</p>
                     </div>
                     @foreach ($featured_tour as $item)
-                        <div class="item-best-tour d-flex">
-                            <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
-                                    alt="Image" width="80" height="80"" width="80" height="80"
-                                    alt=""></a>
-                            <div class="item-content">
-                                <div class="content-top">
-                                    <p class="fs-5">{{ $item->name }} </p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p class="fs-5">{{ number_format($item->regular_price) }}$</p>
-                                    <a href="">{{ __('予約') }}</a>
-                                </div>
+                    <div class="item-best-tour d-flex">
+                        <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
+                                alt="Image" width="80" height="80"" width="80" height="80"
+                                alt=""></a>
+                        <div class="item-content">
+                            <div class="content-top">
+                                <p class="fs-5">{{ $item->name }} </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                @if ($tour->sale_price == 0)
+                                        <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
+                                    @else
+                                        <p class="fs-5 fw-b">
+                                            <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                            <sup>SALE</sup>
+                                        </p>
+                                    @endif
+                                {{-- <a href="">Book Now</a> --}}
                             </div>
                         </div>
-                    @endforeach
+                    </div>
+                @endforeach
 
 
                 </div>
@@ -279,20 +286,28 @@
                         <p class="fs-4 fw-b">{{ __('トレンドのツアー') }}</p>
                     </div>
                     @foreach ($trending_tour as $item)
-                        <div class="item-best-tour d-flex">
-                            <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
-                                    alt="Image" width="80" height="80" alt=""></a>
-                            <div class="item-content">
-                                <div class="content-top">
-                                    <p class="fs-5">{{ $item->name }} </p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p class="fs-5">{{ number_format($item->regular_price) }}$</p>
-                                    <a>Book Now</a>
+                            <div class="item-best-tour d-flex">
+                                <a href="{{ url('listtour/' . $tour->slug) }}"><img
+                                        src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image"
+                                        width="80" height="80" alt=""></a>
+                                <div class="item-content">
+                                    <div class="content-top">
+                                        <p class="fs-5">{{ $item->name }} </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        @if ($tour->sale_price == 0)
+                                                <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
+                                            @else
+                                                <p class="fs-5 fw-b">
+                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                                    <sup>SALE</sup>
+                                                </p>
+                                            @endif
+                                        {{-- <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a> --}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
 
 
                 </div>

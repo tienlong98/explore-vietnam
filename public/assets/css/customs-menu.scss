@@ -203,9 +203,20 @@ footer {
         }
     }
 }
-
 @media screen and (max-width:768px) {
     footer {
+        .logo-footer {
+            &::before {
+                right: 25vw !important;
+                width: 25vw !important;
+            }
+
+            &::after {
+                left: 25vw !important;
+                width: 25vw !important;
+
+            }
+        }
         .text-footer-right {
             order: 2;
         }
@@ -214,4 +225,23 @@ footer {
             order: 3;
         }
     }
+}
+@media screen and (max-width:576px) {
+
+
+    footer {
+        .logo-footer {
+            &::before {
+                right: 30vw !important;
+                width: 25vw !important;
+            }
+
+            &::after {
+                left: 30vw !important;
+                width: 25vw !important;
+            }
+        }
+    }
+
+
 }

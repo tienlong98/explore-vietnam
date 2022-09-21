@@ -195,7 +195,7 @@ header {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-
+    text-align: center;
     .item-content-tour {
         width: 100%;
         position: absolute;
@@ -240,7 +240,7 @@ header {
         cursor: pointer;
         position: relative;
         overflow: hidden;
-
+        text-align: center;
         a {
             color: white;
 
@@ -449,6 +449,9 @@ footer {
 }
 
 @media screen and (max-width:576px) {
+    img{
+        width: 80%;
+    }
     .sokai-content {
         column-count: 1 !important;
     }
@@ -459,9 +462,22 @@ footer {
                 right: 30vw;
                 width: 25vw;
             }
+
             &::after {
                 left: 30vw;
                 width: 25vw;
+            }
+        }
+    }
+
+    .sokaibasho {
+        .sokai-content {
+            .image {
+                text-align: center;
+
+                img {
+                    width: 75%;
+                }
             }
         }
     }

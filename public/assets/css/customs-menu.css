@@ -209,6 +209,14 @@ footer .text-footer-center .ion-ft {
 }
 
 @media screen and (max-width: 768px) {
+  footer .logo-footer::before {
+    right: 25vw !important;
+    width: 25vw !important;
+  }
+  footer .logo-footer::after {
+    left: 25vw !important;
+    width: 25vw !important;
+  }
   footer .text-footer-right {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -218,6 +226,17 @@ footer .text-footer-center .ion-ft {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .logo-footer::before {
+    right: 30vw !important;
+    width: 25vw !important;
+  }
+  footer .logo-footer::after {
+    left: 30vw !important;
+    width: 25vw !important;
   }
 }
 /*# sourceMappingURL=customs-menu.css.map */
