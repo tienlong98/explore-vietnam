@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
                 <div class="d-flex justify-content-center align-items-center ">
-                    <img src="{{ asset('assets/images/phanxipang.png') }}" width="60%" alt="">
+                    <img src="{{ asset('assets/new-images/phanxipang.jpg') }}" width="60%" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
@@ -37,7 +37,7 @@
             <div class="col-lg-12 ">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center">
-                        <img src="{{ asset('assets/images/phanxipang3.png') }}" width="90%" alt="">
+                        <img src="{{ asset('assets/new-images/phangxipang3.jpg') }}" width="90%" alt="">
                     </div>
                 </div>
             </div>
@@ -52,10 +52,10 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
-                <img src="{{ asset('assets/images/phanxipang6.png') }}" width="90%" height="65%" class="mt-5" alt="">
+                <img src="{{ asset('assets/new-images/phangxipang2.jpg') }}" width="90%" height="65%" class="mt-5" alt="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 d-flex justify-content-center">
-                <img src="{{ asset('assets/images/phanxipang5.png') }}" width="90%" class="mt-5" alt="">
+                <img src="{{ asset('assets/new-images/phangxipang4.webp') }}" width="90%" class="mt-5" alt="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5 position-relative">
                 <div>
