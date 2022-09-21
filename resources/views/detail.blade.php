@@ -169,15 +169,15 @@
                                             width="50" height="50" alt="">
                                     </div>
                                     <div class="content-conmemt">
-                                        <form action="{{ url('rating', []) }}" method="POST">
+                                        <form action="{{ url('rating') }}" method="POST">
                                             @csrf
                                             <div class="rating mb-3">
                                                 <div id="rateYo"></div>
                                                 <input type="hidden" id="rating-star" name="rating_star">
                                                 <input type="hidden" id="tour_id" name="tour_id"
                                                     value="{{ $tour->id }}">
-                                                <input type="hidden" id="user_id" name="user_id"
-                                                    value="{{ Auth::user()->id }}">
+                                                {{-- <input type="hidden" id="user_id" name="user_id"
+                                                    value="{{ Auth::user()->id }}"> --}}
                                             </div>
                                             <textarea name="comment" id="comment" rows="4"></textarea>
                                             <div class="d-flex justify-content-center mt-3 mb-5"><input class="css-button"

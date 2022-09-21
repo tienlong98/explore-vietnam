@@ -1,6 +1,12 @@
 @extends('layouts.custom-menu')
 
 @section('content')
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+</style>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 best-tour text-center mt-5">
@@ -35,7 +41,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-12 mb-3">
                         <div class="item-hotels">
                             <a href="/listditich">
-                                <img src="{{ asset('assets/images/ptg6.png') }}" />
+                                <img src="{{ asset('assets/images/dt1.jpg') }}" />
                                 <div class="item-content-ks d-flex justify-content-center align-items-center">
                                     <p>{{ __('人気遺産') }}</p>
                                 </div>
@@ -45,7 +51,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-12 mt-5 mb-3">
                         <div class="item-hotels">
                             <a href="/listumi">
-                                <img src="{{ asset('assets/images/kp5.jpg') }}" />
+                                <img src="{{ asset('assets/images/umi1.jpg') }}" />
                                 <div class="item-content-ks d-flex justify-content-center align-items-center">
                                     <p>{{ __('海岸と島々') }}</p>
                                 </div>
@@ -83,20 +89,26 @@
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
+                    <a href="/transport">
                     <ion-icon name="car-sport-outline"></ion-icon>
                     <p class="fs-4">{{ __('交通') }}</p>
+                </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
+                    <a href="/weather">
                     <ion-icon name="thunderstorm-outline"></ion-icon>
                     <p class="fs-4">{{ __('天気') }}</p>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
+                    <a href="/safety">
                     <ion-icon name="shield-outline"></ion-icon>
                     <p class="fs-4">{{ __('安全') }}</p>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
@@ -110,13 +122,37 @@
                 <div class="title-sokai text-center mt-5 mb-5">
                     <h1>{{ __('ストーリーを共有しよう') }}</h1>
                     <p>
-                    {{ __('インスタグラム で最高の #探検ーベトナム の瞬間をタグ付けしてください') }}
+                        {{ __('インスタグラム で最高の #探検ーベトナム の瞬間をタグ付けしてください') }}
                     </p>
                 </div>
                 <div class="sokai-content">
                     <div class="image">
                         <a href="https://www.instagram.com/">
                             <img class="myimg" src="{{ asset('assets/new-images/Hanoi1.png') }}" />
+                            <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="https://www.instagram.com/">
+                            <img class="myimg" src="{{ asset('assets/images/dt1.jpg') }}" />
+                            <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="https://www.instagram.com/">
+                            <img class="myimg" src="{{ asset('assets/images/umi1.jpg') }}" />
+                            <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="https://www.instagram.com/">
+                            <img class="myimg" src="{{ asset('assets/images/dldalat4.jpg') }}" />
+                            <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="https://www.instagram.com/">
+                            <img class="myimg" src="{{ asset('assets/images/dlhoian10.jpg') }}" />
                             <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
                         </a>
                     </div>
@@ -142,7 +178,12 @@
                     <div class="image">
                         <img class="myimg" src="{{ asset('assets/new-images/mcc3.png') }}" />
                         <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
-
+                    </div>
+                    <div class="image">
+                        <a href="https://www.instagram.com/">
+                            <img class="myimg" src="{{ asset('assets/images/dlsapa11.jpg') }}" />
+                            <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                        </a>
                     </div>
                     <div class="image">
                         <img class="myimg" src="{{ asset('assets/images/kp16.jpg') }}" />

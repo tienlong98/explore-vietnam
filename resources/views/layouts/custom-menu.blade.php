@@ -18,6 +18,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     <style>
         .icon-language {
             width: 16px;
@@ -26,30 +29,34 @@
         }
 
         #progress {
-        position: fixed;
-        background: #03cc65;
-        bottom: 20px;
-        right: 10px;
-        height: 70px;
-        width: 70px;
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-}
+            position: fixed;
+            background: #03cc65;
+            bottom: 20px;
+            right: 10px;
+            height: 70px;
+            width: 70px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
 
-    #progress-value {
-        display: block;
-        height: calc(100% - 20px);
-        width: calc(100% - 20px);
-        background-color: #ffffff;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        font-size: 35px;
-        color: #001a2e;
-    }
+        #progress-value {
+            display: block;
+            height: calc(100% - 20px);
+            width: calc(100% - 20px);
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            color: #001a2e;
+        }
+
+        .nav-link {
+            font-family: 'Shippori Mincho', serif;
+        }
     </style>
     @yield('css')
 
@@ -58,16 +65,18 @@
 <body>
     <header>
         <div id="menu" class="menu">
-
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid d-flex justify-content-around">
+                <div class="container-fluid d-flex justify-content-between">
                     <div class="logo">
                         <ion-icon name="heart-outline" class="icon-1"></ion-icon>
-                        <a class="text-logo" href="#">VietNam</a>
+                        <a class="text-logo" href="/">VietNam</a>
                         <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                     </div>
-
-                    <div class="list-menu collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="/">{{ __('ホーム') }}</a>
@@ -81,10 +90,12 @@
                                     {{ __('行き場') }}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">{{ __('冒険旅行') }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">{{ __('冒険旅行') }}</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="{{ url('listditich') }}">{{ __('人気遺産') }}</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">{{ __('海岸と島々') }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">{{ __('海岸と島々') }}</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -93,11 +104,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact">{{ __('お問い合わせ') }}</a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="menu-right d-flex">
-
-                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -153,12 +159,9 @@
                                 </li>
                             @endguest
                         </ul>
+
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
                 </div>
             </nav>
         </div>

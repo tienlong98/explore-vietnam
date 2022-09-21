@@ -42,7 +42,8 @@ class ListTourController extends Controller
     public function addrate(Request $req)
     {
         $rating = new Rating();
-        $rating->user_id = $req->input('user_id');
+        $user = Auth::user();
+        $rating->user_id = $user->id;
         $rating->rating_star = $req->input('rating_star');
         $rating->tour_id = $req->input('tour_id');
         $rating->comment = $req->input('comment');

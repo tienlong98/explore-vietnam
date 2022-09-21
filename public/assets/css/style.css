@@ -85,6 +85,25 @@ header .menu .nav-item {
 
 header .menu .nav-item .nav-link {
   color: white;
+  position: relative;
+}
+
+header .menu .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 1.8px;
+  margin-top: 3px;
+  background-color: #ffffff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+header .menu .nav-item .nav-link:hover::before {
+  width: 100%;
 }
 
 header .menu .menu-right .login {
@@ -415,6 +434,14 @@ footer .text-footer-center .ion-ft {
     -webkit-column-count: 2 !important;
             column-count: 2 !important;
   }
+  footer .logo-footer::before {
+    right: 25vw;
+    width: 25vw;
+  }
+  footer .logo-footer::after {
+    left: 25vw;
+    width: 25vw;
+  }
   footer .text-footer-right {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -431,6 +458,14 @@ footer .text-footer-center .ion-ft {
   .sokai-content {
     -webkit-column-count: 1 !important;
             column-count: 1 !important;
+  }
+  footer .logo-footer::before {
+    right: 30vw;
+    width: 25vw;
+  }
+  footer .logo-footer::after {
+    left: 30vw;
+    width: 25vw;
   }
 }
 

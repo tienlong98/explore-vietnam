@@ -22,7 +22,7 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Category</th>
-                        <th>Description</th>
+
                         <th>Image</th>
                         <th>Price</th>
                         <th>Action</th>
@@ -34,7 +34,7 @@
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->category->name }}</td>
-                            <td class="fix-de">{{ $item->descripsition }}</td>
+
                             <td><img src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image" width="80"
                                     height="80"></td>
                             <td>{{ number_format($item->regular_price) }}</td>

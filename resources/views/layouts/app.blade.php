@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/listyamamori.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/detailtour.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/custom-input-number.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
 
     <style>
         .icon-language {
@@ -35,7 +38,7 @@
         }
 
         #progress {
-             position: fixed;
+            position: fixed;
             background: #03cc65;
             bottom: 20px;
             right: 10px;
@@ -46,7 +49,7 @@
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             cursor: pointer;
-    }
+        }
 
         #progress-value {
             display: block;
@@ -60,7 +63,9 @@
             color: #001a2e;
         }
 
-
+        .nav-link {
+            font-family: 'Shippori Mincho', serif;
+        }
     </style>
 </head>
 
@@ -71,14 +76,17 @@
 
     <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid d-flex justify-content-around">
+            <div class="container-fluid d-flex justify-content-between">
                 <div class="logo">
                     <ion-icon name="heart-outline" class="icon-1"></ion-icon>
-                    <a class="text-logo" href="#">VietNam</a>
+                    <a class="text-logo" href="/">VietNam</a>
                     <ion-icon name="heart-outline" class="icon-2"></ion-icon>
                 </div>
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/">{{ __('ホーム') }}</a>
@@ -87,16 +95,18 @@
                             <a class="nav-link" href="/listtour">{{ __('ツアー') }}</a>
                         </li>
                         <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    {{ __('行き場') }}
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ url('listyama') }}">{{ __('冒険旅行') }}</a></li>
-                                    <li><a class="dropdown-item" href="{{ url('listditich') }}">{{ __('人気遺産') }}</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="{{ url('listumi') }}">{{ __('海岸と島々') }}</a></li>
-                                </ul>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                {{ __('行き場') }}
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ url('listyama') }}">{{ __('冒険旅行') }}</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url('listditich') }}">{{ __('人気遺産') }}</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url('listumi') }}">{{ __('海岸と島々') }}</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about">{{ __('チーム概要') }}</a>
@@ -104,10 +114,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">{{ __('お問い合わせ') }}</a>
                         </li>
-                    </ul>
-                </div>
-                <div class="menu-right d-flex">
-                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -116,7 +122,8 @@
                             <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a class="dropdown-item"
                                         href="{{ route('change_language', ['locale' => 'en']) }}"><img
-                                            src="{{ asset('assets/images/us.png') }}" class="icon-language">{{ __('英語') }}</a>
+                                            src="{{ asset('assets/images/us.png') }}"
+                                            class="icon-language">{{ __('英語') }}</a>
                                 </li>
                                 <li><a class="dropdown-item"
                                         href="{{ route('change_language', ['locale' => 'jp']) }}"><img
@@ -162,11 +169,9 @@
                             </li>
                         @endguest
                     </ul>
+
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
             </div>
         </nav>
     </div>
@@ -241,20 +246,20 @@
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
-        let calcScrollValue = () =>{
+        let calcScrollValue = () => {
             let scrollProgress = document.getElementById("progress");
             let progressValue = document.getElementById("progress-value");
             let pos = document.documentElement.scrollTop;
             // console.log(pos);
             let calcHeight =
                 document.documentElement.scrollHeight -
-                 document.documentElement.clientHeight;
+                document.documentElement.clientHeight;
 
             let scrollValue = Math.round((pos * 100) / calcHeight);
             console.log(scrollValue)
-            if(pos > 100){
+            if (pos > 100) {
                 scrollProgress.style.display = "grid";
-            }else{
+            } else {
                 scrollProgress.style.display = "none";
             }
             scrollProgress.addEventListener("click", () => {
