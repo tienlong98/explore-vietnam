@@ -28,6 +28,144 @@
         figure img {
             width: 50%;
         }
+
+        .ctrl {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #D5DCE6;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .ctrl__counter {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            color: #333C48;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .ctrl__counter.is-input .ctrl__counter-num {
+            visability: hidden;
+            opacity: 0;
+            transition: opacity 100ms ease-in;
+        }
+
+        .ctrl__counter.is-input .ctrl__counter-input {
+            visability: visible;
+            opacity: 1;
+            transition: opacity 100ms ease-in;
+        }
+
+        .ctrl__counter-input {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            color: #333C48;
+            text-align: center;
+            visability: hidden;
+            opacity: 0;
+            transition: opacity 100ms ease-in;
+        }
+
+        .ctrl__counter-num {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            visability: visible;
+            opacity: 1;
+            transition: opacity 1000ms ease-in;
+        }
+
+        .ctrl__counter-num.is-increment-hide {
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: increment-prev 100ms ease-in;
+        }
+
+        .ctrl__counter-num.is-increment-visible {
+            opacity: 1;
+            transform: translateY(0);
+            animation: increment-next 100ms ease-out;
+        }
+
+        .ctrl__counter-num.is-decrement-hide {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: decrement-prev 100ms ease-in;
+        }
+
+        .ctrl__counter-num.is-decrement-visible {
+            opacity: 1;
+            transform: translateY(0);
+            animation: decrement-next 100ms ease-out;
+        }
+
+        .ctrl__button {
+            width: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            background-color: #8498a7;
+            transition: background-color 100ms ease-in;
+        }
+
+        .ctrl__button:hover {
+            background-color: #90a2b0;
+            transition: background-color 100ms ease-in;
+        }
+
+        .ctrl__button:active {
+            background-color: #778996;
+            transition: background-color 100ms ease-in;
+        }
+
+        .ctrl__button--decrement {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .ctrl__button--increment {
+            border-radius: 0 5px 5px 0;
+        }
+
+        @keyframes decrement-prev {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes decrement-next {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+
+        @keyframes increment-prev {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes increment-next {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+        }
     </style>
     <div class="title-detail text-center">
         <h1>{{ $tour->name }}</h1>
@@ -256,28 +394,29 @@
                         <p class="fs-4 fw-b">{{ __('注目のツアー') }}</p>
                     </div>
                     @foreach ($featured_tour as $item)
-                    <div class="item-best-tour d-flex">
-                        <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
-                                alt="Image" width="80" height="80"" width="80" height="80"
-                                alt=""></a>
-                        <div class="item-content">
-                            <div class="content-top">
-                                <p class="fs-5">{{ $item->name }} </p>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                @if ($tour->sale_price == 0)
+                        <div class="item-best-tour d-flex">
+                            <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
+                                    alt="Image" width="80" height="80"" width="80" height="80"
+                                    alt=""></a>
+                            <div class="item-content">
+                                <div class="content-top">
+                                    <p class="fs-5">{{ $item->name }} </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    @if ($tour->sale_price == 0)
                                         <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
                                     @else
                                         <p class="fs-5 fw-b">
-                                            <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                            <span
+                                                class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
                                             <sup>SALE</sup>
                                         </p>
                                     @endif
-                                {{-- <a href="">Book Now</a> --}}
+                                    {{-- <a href="">Book Now</a> --}}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
 
 
                 </div>
@@ -286,28 +425,29 @@
                         <p class="fs-4 fw-b">{{ __('トレンドのツアー') }}</p>
                     </div>
                     @foreach ($trending_tour as $item)
-                            <div class="item-best-tour d-flex">
-                                <a href="{{ url('listtour/' . $tour->slug) }}"><img
-                                        src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image"
-                                        width="80" height="80" alt=""></a>
-                                <div class="item-content">
-                                    <div class="content-top">
-                                        <p class="fs-5">{{ $item->name }} </p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        @if ($tour->sale_price == 0)
-                                                <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
-                                            @else
-                                                <p class="fs-5 fw-b">
-                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
-                                                    <sup>SALE</sup>
-                                                </p>
-                                            @endif
-                                        {{-- <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a> --}}
-                                    </div>
+                        <div class="item-best-tour d-flex">
+                            <a href="{{ url('listtour/' . $tour->slug) }}"><img
+                                    src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image"
+                                    width="80" height="80" alt=""></a>
+                            <div class="item-content">
+                                <div class="content-top">
+                                    <p class="fs-5">{{ $item->name }} </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    @if ($tour->sale_price == 0)
+                                        <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
+                                    @else
+                                        <p class="fs-5 fw-b">
+                                            <span
+                                                class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                            <sup>SALE</sup>
+                                        </p>
+                                    @endif
+                                    {{-- <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a> --}}
                                 </div>
                             </div>
-                        @endforeach
+                        </div>
+                    @endforeach
 
 
                 </div>
