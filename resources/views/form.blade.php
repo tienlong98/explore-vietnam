@@ -20,36 +20,37 @@
         <p class="address">NAL JAPAN</p>
         <p> {{ __('〒105-0004 東京都港区新橋６丁目２０−４ 新橋パインビル 4階') }}</p>
     </div>
-    
+
     <div class="form-contact">
-        <form action="https://formsubmit.co/5e86d64465a301d7dd2b7ea161b0999c" method="POST">
+        <form action="{{ url('insert-contact') }}" method="POST">
+            @csrf
             <hr>
             <p class="mt-3">{{ __('＊お客様情報＊') }}</p>
 
                 <div class="mb-3 write">
                     <label for="">{{ __('氏名 *') }}</label>
-                    <input type="text" id="exampleInputPhone" required>
+                    <input type="text" id="exampleInputPhone" name="name" required>
                 </div>
                 <div class="mb-3 write">
                     <label for="">{{ __('ふりがな') }}</label>
-                    <input type="text" id="exampleInputPhone">
+                    <input type="text" id="exampleInputPhone" name="firigana">
                 </div>
-                
+
                 <div class="mb-3 write">
                     <label for="exampleInputEmail1">{{ __('メールアドレス*:') }}</label>
-                    <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="test@gmai.com" required>
+                    <input name="email" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="test@gmai.com" required>
                 </div>
                 <div class="mb-3 write">
                     <label>{{ __('電話番号*:') }}</label>
-                    <input type="num" id="exampleInputPhone" placeholder="03-1234-5678" required>
+                    <input name="sdt" type="num" id="exampleInputPhone" placeholder="03-1234-5678" required>
                 </div>
-                
-                
+
+
                 <p>{{ __('＊お問わせ内容＊') }}</p>
-                
+
                 <div class="mb-3 write">
                     <label class=" message">{{ __('ご記入 :') }}</label>
-                    <textarea name="message"></textarea>
+                    <textarea name="content"></textarea>
                 </div>
                 <!-- <p class="mt-3">＊ご確認＊</p> -->
                 <div class="mb-3 tick-box">

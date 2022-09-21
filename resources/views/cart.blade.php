@@ -25,10 +25,10 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <h1 class="title-shop">
-                    {{ __('カート') }}
+                        {{ __('カート') }}
                     </h1>
                     <p class="text-shop">
-                    {{ __('ホーム') }}: <span>{{ __('カート') }}</span>
+                        {{ __('ホーム') }}: <span>{{ __('カート') }}</span>
                     </p>
                 </div>
             </div>
@@ -77,7 +77,7 @@
 
                         </div>
                         <div class="card-footer">
-                        <p>{{ __('税金抜') }}: {{ number_format($item->subtotal) }}</p>
+                            <p>{{ __('税金抜') }}: {{ number_format($item->subtotal) }}</p>
                             <p>{{ __('税金') }}: {{ number_format($item->tax) }}</p>
                             <p>{{ __('ホテル料金') }}: {{ number_format($item->hotel_id) }}</p>
                             <p>{{ __('車の料金') }}: {{ number_format($item->car_id) }}</p>
@@ -117,7 +117,7 @@
                             @endforeach
 
 
-                            <input class="css-button" type="submit" value="Submit">
+                            <input class="css-button" type="submit" value="{{ __('送信') }}">
 
                         </div>
                     </form>

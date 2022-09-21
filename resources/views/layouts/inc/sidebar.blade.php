@@ -24,6 +24,13 @@
         </a>
 
     </li>
+    <li class="nav-item {{ Request::is('admin-contacts') ? 'active' : '' }}">
+        <a class="nav-link " href="{{ route('admin-contacts') }}">
+            <i class="fa-solid fa-message"></i>
+            <span>Contacts</span>
+        </a>
+
+    </li>
     <li class="nav-item {{ Request::is('booked') ? 'active' : '' }}">
         <a class="nav-link " href="{{ route('booked') }}">
             <i class="fa-solid fa-mountain-sun"></i>
@@ -64,7 +71,7 @@
     <li class="nav-item {{ Request::is('cars') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecar"
             aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fa-regular fa-car-rear"></i>
+            <i class="fa-solid fa-car"></i>
             <span>Cars</span>
         </a>
         <div id="collapsecar" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">

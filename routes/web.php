@@ -53,6 +53,8 @@ Route::get('rungduabaymau', [ListyamaController::class, 'rungduabaymau'])->name(
 Route::get('about', [aboutController::class, 'about'])->name('about');
 // contact
 Route::get('contact', [contactController::class, 'contact'])->name('form');
+Route::post('insert-contact', [contactController::class, 'insert'])->name('insert-contact');
+
 // list travel tips
 Route::get('transport', [travelTipsController::class, 'transport'])->name('transport');
 Route::get('safety', [travelTipsController::class, 'safety'])->name('safety');
@@ -106,7 +108,10 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::put('update-car/{id}', [CarController::class, 'update'])->name('update-car');
     Route::get('delete-car/{id}', [CarController::class, 'destroy'])->name('delete-car');
     Route::get('users', [FrontendController::class, 'user'])->name('users');
+    Route::get('admin-contacts', [contactController::class, 'viewcontact'])->name('admin-contacts');
     Route::get('delete-user/{id}', [FrontendController::class, 'destroy'])->name('delete-user');
+    Route::get('delete-contact/{id}', [contactController::class, 'destroy']);
+    Route::get('admin-contact/{id}', [contactController::class, 'viewdetail']);
     Route::get('admin-booked', [BookedController::class, 'index'])->name('booked');
     Route::get('admin-booked/{id}', [BookedController::class, 'view']);
     Route::put('update-status/{id}', [BookedController::class, 'update']);
