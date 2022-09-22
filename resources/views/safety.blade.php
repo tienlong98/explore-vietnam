@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     <div class="mini-menu">
 
         <p>
@@ -30,7 +30,7 @@
         </p>
     </div>
     <div class="container wrap">
-        <h1 >SAFETY</h1>
+        <h1 >{{__('安全')}}</h1>
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-lg-5 image">

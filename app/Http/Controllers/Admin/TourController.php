@@ -13,6 +13,7 @@ class TourController extends Controller
     public function index()
     {
         $tours = Tour::all();
+
         return view('admin.tour.index', compact('tours'));
     }
     public function add()

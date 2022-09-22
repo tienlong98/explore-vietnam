@@ -1,12 +1,12 @@
 @extends('layouts.custom-menu')
 
 @section('content')
-<style>
-    a{
-        text-decoration: none;
-        color: black;
-    }
-</style>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 best-tour text-center mt-5">
@@ -68,13 +68,14 @@
             @foreach ($trending_tour as $item)
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-5">
                     <div class="item-bt">
-                        <img class="" src="{{ asset('assets/uploads/tours/' . $item->image) }}" />
+                        <a href="{{ url('listtour/' . $item->slug) }}">
+                            <img class="" src="{{ asset('assets/uploads/tours/' . $item->image) }}" /></a>
                         <div class="item-content-tour">
                             <div class="d-flex justify-content-between">
                                 <p class="item-title fs-5 ms-3 mb-2">{{ $item->name }}</p>
 
                             </div>
-                            <p class="item-naiyo fs-6 ms-3">{{ $item->short_descripsition }}</p>
+                            <p class="item-naiyo fs-6 ms-3 text-start">{{ $item->short_descripsition }}</p>
                         </div>
                     </div>
                 </div>
@@ -90,24 +91,24 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <a href="/transport">
-                    <ion-icon name="car-sport-outline"></ion-icon>
-                    <p class="fs-4">{{ __('交通') }}</p>
-                </a>
+                        <ion-icon name="car-sport-outline"></ion-icon>
+                        <p class="fs-4">{{ __('交通') }}</p>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <a href="/weather">
-                    <ion-icon name="thunderstorm-outline"></ion-icon>
-                    <p class="fs-4">{{ __('天気') }}</p>
+                        <ion-icon name="thunderstorm-outline"></ion-icon>
+                        <p class="fs-4">{{ __('天気') }}</p>
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-12 pb-5 pt-3">
                 <div class="item-tips fs-1 text-center pt-3">
                     <a href="/safety">
-                    <ion-icon name="shield-outline"></ion-icon>
-                    <p class="fs-4">{{ __('安全') }}</p>
+                        <ion-icon name="shield-outline"></ion-icon>
+                        <p class="fs-4">{{ __('安全') }}</p>
                     </a>
                 </div>
             </div>

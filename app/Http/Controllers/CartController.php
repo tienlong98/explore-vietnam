@@ -22,7 +22,11 @@ class CartController extends Controller
             $tour = Tour::find($id);
             $cart = new Cart();
             $cart->user_id = $user->id;
-            $cart->price = $tour->regular_price;
+            if ($tour->sale_price == 0) {
+                $cart->price = $tour->regular_price;
+            } else {
+                $cart->price = $tour->sale_price;
+            }
             $cart->name = $tour->name;
             $cart->de_date = $request->input('dd_date');
             $cart->pp_number = $request->input('pp_number');

@@ -143,7 +143,7 @@
                         </div>
                         @foreach ($featured_tour as $item)
                             <div class="item-best-tour d-flex">
-                                <a href=""><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
+                                <a href="{{ url('listtour/' . $item->slug) }}"><img src="{{ asset('assets/uploads/tours/' . $item->image) }}"
                                         alt="Image" width="80" height="80"" width="80" height="80"
                                         alt=""></a>
                                 <div class="item-content">
@@ -173,7 +173,7 @@
                         </div>
                         @foreach ($trending_tour as $item)
                             <div class="item-best-tour d-flex">
-                                <a href="{{ url('listtour/' . $tour->slug) }}"><img
+                                <a href="{{ url('listtour/' . $item->slug) }}"><img
                                         src="{{ asset('assets/uploads/tours/' . $item->image) }}" alt="Image"
                                         width="80" height="80" alt=""></a>
                                 <div class="item-content">
@@ -188,7 +188,7 @@
                                                     <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
                                                     <sup>SALE</sup>
                                                 </p>
-                                            @endif
+                                         @endif
                                         {{-- <a href="{{ url('listtour/' . $tour->slug) }}" class="">More</a> --}}
                                     </div>
                                 </div>

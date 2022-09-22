@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="{{ asset('assets/css/weather.css') }}" />
     <link rel="icon" href="images/icon.ico">
     <title>VIET NAM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -19,10 +21,10 @@
 
         <p>
             <a href="./transport">
-            <ion-icon name="bicycle-outline" class="travel-icon"></ion-icon>
+                <ion-icon name="bicycle-outline" class="travel-icon"></ion-icon>
             </a>
         </p>
-        
+
         <p>
             <a href="/safety">
                 <ion-icon class="travel-icon" name="shield-outline"></ion-icon>
@@ -31,7 +33,7 @@
     </div>
 
     <div class="container wrap">
-        <h1>WEATHER</h1>
+        <h1>{{ __('天気') }}</h1>
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-lg-5 image">
@@ -50,14 +52,15 @@
         </div>
     </div>
 
-    <div class = "home-back">
+    <div class="home-back">
         <p>
             <a href="/">
-            <ion-icon name="arrow-back-outline" class="travel-icon"></ion-icon>
+                <ion-icon name="arrow-back-outline" class="travel-icon"></ion-icon>
         </p>
         <p>
             <a href="/">
-            <ion-icon name="home-outline" class="travel-icon"></ion-icon>            </a>
+                <ion-icon name="home-outline" class="travel-icon"></ion-icon>
+            </a>
         </p>
     </div>
 

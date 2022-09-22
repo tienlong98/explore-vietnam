@@ -46,7 +46,7 @@
                                                 <td>{{ $item->pp_number }}</td>
                                                 <td>{{ number_format($item->total) }}</td>
                                                 <td>{{ $item->de_date }}</td>
-                                                <td>{{ $item->status == 0 ? 'Chua thanh toan' : 'Da thanh toan' }}</td>
+                                                <td>{{ $item->status == 0 ? '未払い' : '払い済み' }}</td>
 
                                             </tr>
                                         @endforeach

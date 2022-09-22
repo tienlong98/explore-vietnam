@@ -260,9 +260,19 @@
                                     <div class="form-group d-flex justify-content-between mt-3">
                                         <label class="col-form-label">{{ __('価格') }}:</label>
                                         <div>
-
-                                            <p class="fs-3 fw-b">{{ number_format($tour->regular_price) }}$ <span
-                                                    class="fs-5">({{ __('一人分') }})</span></p>
+                                            @if ($tour->sale_price == 0)
+                                                <p class="fs-4 fw-b ">{{ number_format($tour->regular_price) }}$<span
+                                                        class="fs-5">({{ __('一人分') }})</span></p>
+                                            @else
+                                                <p class="fs-4 fw-b">
+                                                    <span
+                                                        class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                                    <sup>SALE</sup>
+                                                    <span class="fs-5">({{ __('一人分') }})</span>
+                                                </p>
+                                            @endif
+                                            {{-- <p class="fs-3 fw-b">{{ number_format($tour->regular_price) }}$ <span
+                                                    class="fs-5">({{ __('一人分') }})</span></p> --}}
                                         </div>
                                     </div>
                                 </div>
