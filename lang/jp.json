@@ -1,5 +1,5 @@
 {
-    "explore": "探検s",
+    "explore": "探検",
     "Viet Nam": "ベトナム",
     "Book Tour": "予約",
     "Travel by personality.": "個性で勝負の旅。",
@@ -16,6 +16,12 @@
     "Japanese": "日本語",
     "Login": "ログイン",
     "Register": "新規",
+    "Email Address":"メール",
+    "Password":"パスワード",
+    "Forgot Your Password?":"パスワードを忘れた場合",
+    "Remember Me":"アカウント認証",
+    "Send Password Reset Link":"パスワードリセットリンクを送信",
+    "Confirm Password":"パスワードを認証する",
 
     "LIVE FULLY IN VIETNAM": "完全にベトナムで暮らす",
     "Spectacular nature. Exceptional cuisine. Cultural diversity.Excellent service.": "壮観な自然。素晴らしい料理。文化の多様性。すばらしいサービス。",
@@ -171,8 +177,8 @@
     "Pho Co Hoi An": "ホイアン旧市街",
     "Nha Trang": "ニャチャン",
     "Phu Quoc island": "フーコック島",
-    "Halong Bay": "ハロン湾"
+    "Halong Bay": "ハロン湾",
 
-
+    "Phone Number":"＊電話番号＊"
 
 }

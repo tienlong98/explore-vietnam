@@ -19,6 +19,7 @@
     <div class="company-address">
         <p class="address">NAL JAPAN</p>
         <p> {{ __('〒105-0004 東京都港区新橋６丁目２０−４ 新橋パインビル 4階') }}</p>
+        <p>{{ __('＊電話番号＊') }}: 050-3571-3553</p>
     </div>
 
     <div class="form-contact">
