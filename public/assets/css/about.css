@@ -6,31 +6,27 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
     /* background: url(../images/bgdulich1.jpg) no-repeat; */
     /* background-color: #131f33; */
-    background: linear-gradient(#131f33 ,#131f33,#131f33,#131f33,#131f33,#131f33,#131f33,#fff,#fff);
+    background: linear-gradient(#131f33, #131f33, #131f33, #131f33, #131f33, #131f33, #131f33, #fff, #fff);
     background-size: cover;
     background-position: center;
 }
 
 section {
-    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
-
 
 
 /* header {
@@ -69,6 +65,7 @@ header .menu-bar a:not(:last-child) {
     margin-right: 30px;
 } */
 
+
 /* header .menu-bar a:hover {
     background: #fff;
 }
@@ -94,12 +91,11 @@ label {
 
 /* team-member */
 
-.hr{
+.hr {
     margin: 20px 0;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #fff;
-   
 }
 
 .about-us {
@@ -146,13 +142,10 @@ label {
 }
 
 .about-text h3 {
-    
-    
     text-align: center;
     border-left: none;
     padding-left: 0;
 }
-
 
 .about-text h4 {
     font-size: 30px;
@@ -168,7 +161,7 @@ label {
 }
 
 
-/* footer */
+/* content */
 
 .about-1 {
     margin: 30px;
@@ -205,7 +198,7 @@ label {
 }
 
 .about-item h3 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
     border-left: none;
     text-align: center;
@@ -253,6 +246,7 @@ footer {
     background-color: #fff;
 }
 
+
 /* footer p {
     color: #fff;
 } */
@@ -260,14 +254,11 @@ footer {
 
 /* Responsive */
 
-@media(max-width: 960px) {
-
-    section{
+@media(max-width: 984px) {
+    section {
         margin-top: 100px;
-        background: linear-gradient(#131f33 ,#131f33,#131f33,#131f33 ,#fff);
-
+        background: linear-gradient(#131f33, #131f33, #131f33, #131f33, #fff);
     }
-
     header .menu-bar {
         display: none;
     }
@@ -324,6 +315,9 @@ footer {
         font-size: 30px;
         font-family: cursive;
         padding-top: 5px;
+    }
+    .about-item p {
+        padding: 5px 5px;
     }
     .about-text h4 {
         color: #fff;
