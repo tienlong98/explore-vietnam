@@ -24,7 +24,9 @@
             background-color: #000000;
             color: white;
         }
-
+        figure{
+            text-align: center;
+        }
         figure img {
             width: 50%;
         }

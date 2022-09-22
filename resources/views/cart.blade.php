@@ -64,7 +64,7 @@
                                             </td>
                                             <td>{{ $item->name }}</td>
                                             <td>{{ $item->pp_number }}</td>
-                                            <th>{{ number_format($item->price) }}</th>
+                                            <th>{{ number_format($item->price) }}$</th>
                                             <td>{{ $item->de_date }}</td>
                                             <td><a href="{{ url('delete-cart/' . $item->id) }}"
                                                     class="btn btn-danger">{{ __('消し') }}</a></td>
@@ -77,11 +77,11 @@
 
                         </div>
                         <div class="card-footer">
-                            <p>{{ __('税金抜') }}: {{ number_format($item->subtotal) }}</p>
-                            <p>{{ __('税金') }}: {{ number_format($item->tax) }}</p>
-                            <p>{{ __('ホテル料金') }}: {{ number_format($item->hotel_id) }}</p>
-                            <p>{{ __('車の料金') }}: {{ number_format($item->car_id) }}</p>
-                            <p>{{ __('合計金額') }}: {{ number_format($item->total) }}</p>
+                            <p>{{ __('税金抜') }}: {{ number_format($item->subtotal) }}$</p>
+                            <p>{{ __('税金') }}(10%): {{ number_format($item->tax) }}$</p>
+                            <p>{{ __('ホテル料金') }}: {{ number_format($item->hotel_id) }}$</p>
+                            <p>{{ __('車の料金') }}: {{ number_format($item->car_id) }}$</p>
+                            <p>{{ __('合計金額') }}: {{ number_format($item->total) }}$</p>
                             <input type="hidden" value="{{ number_format($item->total) }}">
                         </div>
                     </div>
