@@ -16,8 +16,12 @@
 
 <body>
 
-    <div class="mini-menu">
-
+    <div class="mini-menu">   
+        <p>
+            <a href="/">
+            <ion-icon name="home-outline" class="travel-icon"></ion-icon></a>
+        </p>
+        
         <p>
             <a href="/transport">
             <ion-icon name="bicycle-outline" class="travel-icon"></ion-icon>
@@ -28,6 +32,7 @@
             <ion-icon class="travel-icon" name="cloudy-night-outline"></ion-icon>
             </a>
         </p>
+
     </div>
     <div class="container wrap">
         <h1 >{{__('安全')}}</h1>
@@ -52,16 +57,7 @@
         </div>
     </div>
 
-    <div class = "home-back">
-        <p>
-            <a href="/">
-            <ion-icon name="arrow-back-outline" class="travel-icon"></ion-icon>
-        </p>
-        <p>
-            <a href="/">
-            <ion-icon name="home-outline" class="travel-icon"></ion-icon>            </a>
-        </p>
-    </div>
+    
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

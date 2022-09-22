@@ -18,7 +18,11 @@
 
 <body>
     <div class="mini-menu">
-
+        <p>
+            <a href="/">
+                <ion-icon name="home-outline" class="travel-icon"></ion-icon>
+            </a>
+        </p>
         <p>
             <a href="./transport">
                 <ion-icon name="bicycle-outline" class="travel-icon"></ion-icon>
@@ -52,7 +56,7 @@
         </div>
     </div>
 
-    <div class="home-back">
+    <!-- <div class="home-back">
         <p>
             <a href="/">
                 <ion-icon name="arrow-back-outline" class="travel-icon"></ion-icon>
@@ -62,7 +66,7 @@
                 <ion-icon name="home-outline" class="travel-icon"></ion-icon>
             </a>
         </p>
-    </div>
+    </div> -->
 
 
 

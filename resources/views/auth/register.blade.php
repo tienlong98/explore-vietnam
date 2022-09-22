@@ -23,7 +23,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8 mt-5">
                 <div class="card">
-                    <div class="card-header">{{ __('Register') }}</div>
+                    <div class="card-header">{{ __('新規') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
@@ -31,7 +31,7 @@
 
                             <div class="row mb-3">
                                 <label for="name"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('氏名 *') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="name" type="text"
@@ -48,7 +48,7 @@
 
                             <div class="row mb-3">
                                 <label for="email"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('メール') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="email" type="email"
@@ -65,7 +65,7 @@
 
                             <div class="row mb-3">
                                 <label for="password"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('パスワード') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password" type="password"
@@ -82,7 +82,7 @@
 
                             <div class="row mb-3">
                                 <label for="password-confirm"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('パスワードを認証する') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
@@ -92,7 +92,7 @@
 
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary ps-4 pe-4">
                                         {{ __('Register') }}
                                     </button>
                                 </div>
