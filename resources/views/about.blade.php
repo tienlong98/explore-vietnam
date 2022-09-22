@@ -19,7 +19,7 @@
     <section>            
     
                 <div class="back-ground ">
-                    <img src="{{ asset('assets/new-images/about-back.png') }}" alt="">
+                    <img src="{{ asset('assets/new-images/back2-tour.png') }}" alt="">
                 </div>
         
         
