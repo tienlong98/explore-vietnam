@@ -346,7 +346,7 @@
 
                                     <div class="comment-naiyo">
                                         <div class="yoho-user d-flex justify-content-between">
-                                            <p>{{ Auth::user()->name }}</p>
+                                            <p>{{ $item->user->name }}</p>
                                             <div class="time-rate d-flex">
                                                 <p>{{ Carbon\Carbon::parse($item->created_at)->format('d F Y g:i A') }}</p>
                                                 {{-- <div class="star">
