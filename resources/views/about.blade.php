@@ -13,16 +13,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-    
+
     @extends('layouts.app')
     @section('content')
-    <section>            
-    
+    <section>
+
                 <div class="back-ground ">
                     <img src="{{ asset('assets/new-images/back2-tour.png') }}" alt="">
                 </div>
-        
-        
+
+
                 <div class="team-member mt-5">
                     <div class="about-1 ">
                         <h1>{{ __('私たちについて') }}</h1>
@@ -32,7 +32,7 @@
                             <hr class="hr">
                             <div class="col-lg-12">
                                 <div class="row">
-        
+
                                     <div class="col-lg-5">
                                         <div class="about-img">
                                             <img src="{{ asset('assets/team-image/Picture2.png') }}" alt="">
@@ -48,10 +48,10 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-        
+
                                     <div class="col-lg-5">
                                         <div class="about-img">
                                             <img src="{{ asset('assets/team-image/Picture1.png') }}" alt="">
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-        
+
                                     <div class="col-lg-5">
                                         <div class="about-img">
                                             <img src="{{ asset('assets/team-image/Picture5.png') }}" alt="">
@@ -86,7 +86,7 @@
                             </div>
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-        
+
                                     <div class="col-lg-5">
                                         <div class="about-img">
                                             <img src="{{ asset('assets/team-image/Picture3.png') }}" alt="">
@@ -103,7 +103,7 @@
                             </div>
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-        
+
                                     <div class="col-lg-5">
                                         <div class="about-img">
                                             <img src="{{ asset('assets/team-image/Picture4.png') }}" alt="">
@@ -120,10 +120,10 @@
                             </div>
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-        
+
                                     <div class="col-lg-5">
                                         <div class="about-img">
-                                            <img src="{{ asset('assets/team-image/Picture6.png') }}" alt="">
+                                            <img src="{{ asset('assets/team-image/picture6.png') }}" alt="">
                                         </div>
                                     </div>
                                     <div class=" profile col-lg-6 col-lg-offset-1">
@@ -137,12 +137,12 @@
                             </div>
                         </div>
                         <hr class="hr">
-        
+
                     </div>
                 </div>
-        
+
                 <div class="content">
-        
+
                     <div id="about">
                         <div class="content-box-lg mt-5">
                             <div class="container">
@@ -151,7 +151,7 @@
                                         <div class="about-item text-center">
                                             <i class="fa fa-low-vision"></i>
                                             <h3>VISSON</h3>
-        
+
                                             <p>VIET NAM EXPLOREはベトナム内に旅行プラン提供のトップサイトになり、国際舞台におけるベトナム観光業の地位を強化します。
                                             </p>
                                         </div>
@@ -160,7 +160,7 @@
                                         <div class="about-item text-center">
                                             <i class="fa fa-globe"></i>
                                             <h3>REAL VALUE</h3>
-        
+
                                             <p>来ベトナムの方に手頃なプランで、十分に楽しめるプランを提供します。
                                             </p>
                                         </div>
@@ -169,7 +169,7 @@
                                         <div class="about-item text-center">
                                             <i class="fa fa-pencil"></i>
                                             <h3>PURPOSE</h3>
-        
+
                                             <p>お客様にベトナムの各地の魅力を詳しく素晴らしい体験を伝えたいため、一番良い旅行ウェブサイトを作成します</p>
                                         </div>
                                     </div>
@@ -177,7 +177,7 @@
                                         <div class="about-item text-center">
                                             <i class="fa fa-file-text"></i>
                                             <h3>CORE VALUE</h3>
-        
+
                                             <p>安心・安全をベースに、新たな刺激や感動により、人々の心と体に活力をあたえる様々な交流を創造してきました。お客様のカスタマージャーニーに寄り添った「実感価値」の実現に取り組みます。</p>
                                         </div>
                                     </div>
@@ -186,13 +186,13 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- <footer class="text-center">
                     <p>Copyright &copy; 2022 All rights reserved by freddie Nice Inc</p>
                 </footer> -->
                 @endsection
-                
-            </section>    
+
+            </section>
 
 </body>
 
