@@ -10,6 +10,15 @@
                 @csrf
                 <div class="row">
                     <div class="col-lg-12 mb-3">
+                        <label for="">Category</label>
+                        <select class="form-select" name="cate_id">
+                            <option value="" selected>Select Category</option>
+                            @foreach ($category as $item)
+                                <option value="{{ $item->id }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-lg-12 mb-3">
                         <label for="">Name</label>
                         <input type="text" class="form-control" name="name">
                     </div>
