@@ -22,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     <style>
+        body {
+            font-family: 'Shippori Mincho', serif !important;
+        }
         .icon-language {
             width: 16px;
             height: auto;

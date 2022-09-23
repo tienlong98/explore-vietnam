@@ -26,6 +26,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/customs-input-number.css') }}" /> --}}
     <style>
+        body {
+            font-family: 'Shippori Mincho', serif !important;
+        }
+
         .icon-language {
             width: 16px;
             height: auto;
