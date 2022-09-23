@@ -151,14 +151,14 @@
                                         <p class="fs-5">{{ $item->name }} </p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        @if ($tour->sale_price == 0)
-                                                <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
-                                            @else
+                                        @if ($item->sale_price == 0)
+                                                <p class="fs-5 fw-b ">{{ number_format($item->regular_price) }}$</p>
+                                        @else
                                                 <p class="fs-5 fw-b">
-                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                                    <span class="text-decoration-line-through">{{ number_format($item->regular_price) }}</span>->{{ number_format($item->sale_price) }}$
                                                     <sup>SALE</sup>
                                                 </p>
-                                            @endif
+                                        @endif
                                         {{-- <a href="">Book Now</a> --}}
                                     </div>
                                 </div>
@@ -181,11 +181,11 @@
                                         <p class="fs-5">{{ $item->name }} </p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        @if ($tour->sale_price == 0)
-                                                <p class="fs-5 fw-b ">{{ number_format($tour->regular_price) }}$</p>
-                                            @else
+                                        @if ($item->sale_price == 0)
+                                                <p class="fs-5 fw-b ">{{ number_format($item->regular_price) }}$</p>
+                                        @else
                                                 <p class="fs-5 fw-b">
-                                                    <span class="text-decoration-line-through">{{ number_format($tour->regular_price) }}</span>->{{ number_format($tour->sale_price) }}$
+                                                    <span class="text-decoration-line-through">{{ number_format($item->regular_price) }}</span>->{{ number_format($item->sale_price) }}$
                                                     <sup>SALE</sup>
                                                 </p>
                                          @endif
