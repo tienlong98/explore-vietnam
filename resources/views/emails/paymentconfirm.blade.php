@@ -1,6 +1,6 @@
 <h1>ご注文ありがとうございます。</h1>
 <h2>Eメールでお知らせいたします。</h2>
-<h1>Xin Chao <p>{{ $user->name }}様</p>
+<h1>{{ $user->name }}様
 </h1>
 <p>ご注文番号："{{ $booked->id }}-{{ $booked->de_date }}" </p>
 <p>ご注文日：{{ $booked->created_at }}</p>

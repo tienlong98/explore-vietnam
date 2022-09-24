@@ -11,8 +11,16 @@
         integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ asset('assets/css/phuquoc.css') }}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
 
-    <title>{{ __('カマウ水上マーケット') }}</title>
+    <style>
+        body {
+            font-family: 'Shippori Mincho', serif !important;
+        }
+    </style>
+        <title>{{ __('カマウ水上マーケット') }}</title>
+
 </head>
 
 <body>

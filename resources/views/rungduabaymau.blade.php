@@ -11,6 +11,13 @@
         integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ asset('assets/css/phuquoc.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Shippori Mincho', serif !important;
+        }
+    </style>
 
     <title>{{ __('ラング ドゥア ベイ マウ') }}</title>
 </head>
@@ -81,7 +88,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 content-3-right">
                     <img src="{{ asset('assets/new-images/rungdua5.jpg') }}" width="50%" alt="" />
                     <img src="{{ asset('assets/new-images/rungdua11.jpg') }}" class="fix-vitri2" width="50%" alt="" />
-                        
+
                 </div>
             </div>
         </div>

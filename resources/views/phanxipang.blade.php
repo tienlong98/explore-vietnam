@@ -8,6 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/detailyama.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Shippori Mincho', serif !important;
+        }
+    </style>
     <title>{{ __('ファンシーパン') }}</title>
 </head>
 
@@ -60,8 +67,8 @@
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5 position-relative">
                 <div>
                     <h2 class="mt-5">{{ __('ファンシーパン山の魅力') }}</h2>
-                   
-                    <p class="mt-3">{{ __('二日に登るかロープウェイで６分に乗ってから20分〜30分登った後、ファンシーパンレジャンに到着する。竹の庭、宝安禅僧院、レストラン、モールなどを自由に探索できる。') }}  
+
+                    <p class="mt-3">{{ __('二日に登るかロープウェイで６分に乗ってから20分〜30分登った後、ファンシーパンレジャンに到着する。竹の庭、宝安禅僧院、レストラン、モールなどを自由に探索できる。') }}
                     </p>
 
                 </div>

@@ -8,6 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/detailyama.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Shippori Mincho', serif !important;
+        }
+    </style>
     <title>{{ __('サパ') }}</title>
 </head>
 
@@ -46,7 +53,7 @@
 
                 <p class="mt-3">
                 <b>{{ __('*サパキッチンの水牛の肉*') }}</b><br>
-                {{ __('キッチン バッファローの肉はサパの特産品です。新鮮な水牛の肉をスパイスで丁寧にマリネした後、薪ストーブの煙で火が通るまでスモークし、完全に乾燥させます。再び蒸すか煮沸してから、水で飲むか、みじん切りにしてレモンの皮をもう少し絞る必要があります。芳醇な肉の旨味と刺激的な香り、後味の甘さはまさに「人間の美」の名にふさわしい。') }} <br>              
+                {{ __('キッチン バッファローの肉はサパの特産品です。新鮮な水牛の肉をスパイスで丁寧にマリネした後、薪ストーブの煙で火が通るまでスモークし、完全に乾燥させます。再び蒸すか煮沸してから、水で飲むか、みじん切りにしてレモンの皮をもう少し絞る必要があります。芳醇な肉の旨味と刺激的な香り、後味の甘さはまさに「人間の美」の名にふさわしい。') }} <br>
                 <b>{{ __('*サーモンサパ*') }}</b><br>
                 {{ __('海だけでなく、サパなどの高地でもトップクラスのサーモンが獲れます。サパサーモン（またはフライドサーモン、ニジマス）は低温の海域に生息することが多いため、肉は柔らかく、脂肪が多すぎず、赤オレンジ色が目を引きます。サパサーモン鍋は一度を食べたい。') }}<br>
                 <b>{{ __('*ワキ豚*') }}</b><br>
